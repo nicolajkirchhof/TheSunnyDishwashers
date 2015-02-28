@@ -1,46 +1,49 @@
-var dishwasher = (function () {
+var enums = require('./enums.js');
 
-  // privates
+var dishWasher = (function () {
 
-  var basket = [];
+    var applianceAdapter = null;
+    var directive = enums.applianceDirectiveEnum.WAIT;
 
-  function doSomethingPrivate() {
-    //...
-  }
+    var run = function() {
+        directive = enums.applianceDirectiveEnum.RUN;
 
-  function doSomethingElsePrivate() {
-    //...
-  }
+        // Tell adapter to start the machine
+    };
 
-  // Return an object exposed to the public
-  return {
+    var reset = function() {
+        directive = enums.applianceDirectiveEnum.WAIT;
+    };
 
-    // Add items to our basket
-    addItem: function( values ) {
-      basket.push(values);
-    },
+    var setPowerState = function(powerState) {
+       if (powerState === enums.powerStateEnum.STRONG) run();
+    };
 
-    // Get the count of items in the basket
-    getItemCount: function () {
-      return basket.length;
-    },
+    var setPresence = function(isAnybodyThere) {
+        if (isAnybodyThere) run();
+    } ;
 
-    // Public alias to a  private function
-    doSomething: doSomethingPrivate,
+    return {
+        // DI: adapter to physical dishwasher appliance
+        setApplianceAdapter: function(dep) {
+            reset();
+            applianceAdapter = dep;
+        },
 
-    // Get the total value of items in the basket
-    getTotal: function () {
+        // DI: power state aggregator
+        setPower: function(dep) {
+            reset();
+            dep.onPowerStateChanged(setPowerState);
+        },
 
-      var q = this.getItemCount(),
-          p = 0;
+        // DI: power presence aggregator
+        setPresence: function(dep) {
+            reset();
+            dep.onPresenceChanged(setPresence);
+        },
 
-      while (q--) {
-        p += basket[q].price;
-      }
-
-      return p;
-    }
-  };
+        getDirective: function() { return directive }
+    };
 })();
 
-// exports.templateModule = templateModule;
+module.exports = dishWasher;

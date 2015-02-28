@@ -2,16 +2,20 @@ var presence = (function () {
 
     // privates
 
+    var isPresent = false;
+
     var callback = null;
 
     var presenceDetectedPrivate = function () {
-        if (callback !== null) {
+        if (callback !== null && !isPresent){
+            isPresent = true;
             callback(true);
         }
     };
 
     var absenceDetectedPrivate = function () {
-        if (callback !== null) {
+        if (callback !== null && isPresent) {
+            isPresent = false;
             callback(false);
         }
     };
@@ -23,6 +27,10 @@ var presence = (function () {
         // Add items to our basket
         onPresenceChanged: function (notifier) {
             callback = notifier;
+        },
+
+        isPresent: function (){
+            return isPresent;
         },
 
         // Public alias to a  private function

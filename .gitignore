@@ -28,5 +28,5 @@ node_modules
 .lock-wscript
 
 #Webstorm
-.idea
-.idea/TheSunnyDishwashers.iml
+.idea/
+
