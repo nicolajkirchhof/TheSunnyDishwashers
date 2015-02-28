@@ -5,8 +5,9 @@
   "main": "main.js",
   "license": "MIT",
   "dependencies": {
-    "relayr": "*",
+    "firebase": "^2.2.1",
     "mocha": "*",
+    "relayr": "*",
     "should": "*"
   },
   "readme": "README.md",
