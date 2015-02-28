@@ -23,11 +23,75 @@ describe('Power module', function(){
             done();
         })
 
-        it('should change when light sensor sends intensity = 50', function(done){
+        it('should be STRONG when light sensor sends intensity = 50', function(done){
             power.setLightSensor(mockLightSensor);
-            mockLightSensor.setLightIntensity(51);
+            mockLightSensor.setLightIntensity(50);
 
             power.getPowerState().should.equal(power.powerStates.STRONG);
+            done();
+        })
+
+        it('should be WEAK when light sensor sends intensity = 49', function(done){
+            power.setLightSensor(mockLightSensor);
+            mockLightSensor.setLightIntensity(49);
+
+            power.getPowerState().should.equal(power.powerStates.WEAK);
+            done();
+        })
+    })
+
+    describe('onPowerStateChanged', function(){
+
+        var powerStateChangeCount = 0;
+        var lastPowerState = power.powerStates.UNDEFINED;
+        var observePowerStateChanges = function(powerState){
+            powerStateChangeCount++;
+            lastPowerState = powerState;
+        };
+
+        it('should be called when power state changes from WEAK to STRONG', function(done){
+
+            power.setLightSensor(mockLightSensor);
+            mockLightSensor.setLightIntensity(0);
+
+            powerStateChangeCount = 0;
+            power.onPowerstateChanged(observePowerStateChanges);
+
+            mockLightSensor.setLightIntensity(100);
+
+            powerStateChangeCount.should.equal(1);
+            lastPowerState.should.equal(power.powerStates.STRONG);
+            done();
+        })
+
+        it('should be called when power state changes from STRONG to WEAK', function(done){
+            power.setLightSensor(mockLightSensor);
+            mockLightSensor.setLightIntensity(100);
+
+            powerStateChangeCount = 0;
+            power.onPowerstateChanged(observePowerStateChanges);
+
+            mockLightSensor.setLightIntensity(0);
+
+            powerStateChangeCount.should.equal(1);
+            lastPowerState.should.equal(power.powerStates.WEAK);
+            done();
+        })
+
+        it('should not be called when power state does not change (STRONG to STRONG)', function(done){
+            power.setLightSensor(mockLightSensor);
+
+            // Start with 90...
+            mockLightSensor.setLightIntensity(90);
+
+            powerStateChangeCount = 0;
+            power.onPowerstateChanged(observePowerStateChanges);
+
+            // then move to 80: that should not trigger the event.
+            mockLightSensor.setLightIntensity(80);
+
+            powerStateChangeCount.should.equal(0);
+
             done();
         })
     })

@@ -1,6 +1,7 @@
 var power = (function () {
 
   var powerStateEnum = {
+      UNDEFINED : -1,
       STRONG : 1,
       WEAK : 0
     };
