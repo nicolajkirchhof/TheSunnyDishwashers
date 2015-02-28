@@ -32,6 +32,31 @@ describe('DishWasher module', function(){
         };
     })();
 
+    var mockAppliance = (function () {
+
+        return {
+            runCount : 0,
+            willFail : false,
+
+            reset : function() {
+                this.runCount = 0;
+                this.willFail = false;
+            },
+
+            run : function(success, fail)
+            {
+                this.runCount++;
+                if (this.willFail) {
+                    if (fail) fail();
+                }
+                else
+                {
+                    if (success) success();
+                }
+            }
+        };
+    })();
+
     describe('appliance directive', function(){
         it('should be WAIT by default', function(done){
             dishWasher.getDirective().should.equal(enums.applianceDirectiveEnum.WAIT);
@@ -85,12 +110,26 @@ describe('DishWasher module', function(){
         }),
 
         it('should continue to RUN when presence changes', function(done) {
-            dishWasher.setPower(mockPower);
+            dishWasher.setPresence(mockPresence);
 
             mockPresence.setPresence(false);
             mockPresence.setPresence(true);
 
             dishWasher.getDirective().should.equal(enums.applianceDirectiveEnum.RUN);
+            done();
+        })
+    }),
+
+    describe('appliance communication', function() {
+        it('should tell the appliance to run when presence changes', function(done) {
+            mockAppliance.reset();
+
+            dishWasher.setPresence(mockPresence);
+            dishWasher.setApplianceAdapter(mockAppliance);
+
+            mockPresence.setPresence(true);
+
+            mockAppliance.runCount.should.equal(1);
             done();
         })
     })

@@ -8,7 +8,9 @@ var dishWasher = (function () {
     var run = function() {
         directive = enums.applianceDirectiveEnum.RUN;
 
-        // Tell adapter to start the machine
+        // For the moment, just fire the Run command once and don't check result...
+        // ...better would be: retry, notify user
+        if(applianceAdapter) applianceAdapter.run();
     };
 
     var reset = function() {
