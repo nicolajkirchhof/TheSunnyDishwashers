@@ -1,0 +1,1854 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"rea",
+				"relayr"
+			],
+			[
+				"my",
+				"myargument"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"Pro",
+				"Program"
+			],
+			[
+				"o",
+				"outline"
+			],
+			[
+				"pro",
+				"project"
+			],
+			[
+				"App",
+				"AppData"
+			],
+			[
+				"Conve",
+				"ConvexDecompositionWithoutSteinerPoints"
+			],
+			[
+				"ConvexD",
+				"ConvexDecompositionWithSteinerPoints"
+			],
+			[
+				"Conv",
+				"ConvexDecompositionWithoutSteinerPoints"
+			],
+			[
+				"Radi",
+				"RadialPolygonDecompositionExplained"
+			],
+			[
+				"stein",
+				"steinpointremoval"
+			],
+			[
+				"inc",
+				"includegraphics"
+			],
+			[
+				"Sc",
+				"ScQKellyVsQualityFunction"
+			],
+			[
+				"ScQ",
+				"ScQKellyVsInterpointDistanceDiff"
+			],
+			[
+				"gdo",
+				"gdop_trilateration"
+			],
+			[
+				"case",
+				"caseselement"
+			],
+			[
+				"vfo",
+				"vfov_visible_content"
+			],
+			[
+				"enu",
+				"enumerate"
+			],
+			[
+				"cite",
+				"citet"
+			],
+			[
+				"if",
+				"ifthenelse"
+			],
+			[
+				"optimi",
+				"optimizationsubjects"
+			],
+			[
+				"opti",
+				"optimizationcriterion"
+			],
+			[
+				"th",
+				"thefigurecounter"
+			],
+			[
+				"dop",
+				"doptrilateration_content"
+			],
+			[
+				"add",
+				"addfigure"
+			],
+			[
+				"math",
+				"mathfrak"
+			],
+			[
+				"W",
+				"W^p"
+			],
+			[
+				"mat",
+				"mathfrak"
+			],
+			[
+				"Q",
+				"Qscw"
+			],
+			[
+				"sim",
+				"simplemathset"
+			],
+			[
+				"end",
+				"end{alignat}	Diss_Kirchhof.tex"
+			],
+			[
+				"gra",
+				"graphics"
+			],
+			[
+				"msymSen",
+				"msymSensorspaceposition"
+			],
+			[
+				"Om",
+				"Omega"
+			],
+			[
+				"todo",
+				"todolist"
+			],
+			[
+				"it",
+				"item	Itemize"
+			],
+			[
+				"kel",
+				"Kelly2003: Precision dilution in triangulation based mobile robot position estimation"
+			],
+			[
+				"ir",
+				"fig:irfseminarplacement"
+			],
+			[
+				"vf",
+				"msymVfovIntersection"
+			],
+			[
+				"bi",
+				"eqn:bip:simple:obj"
+			],
+			[
+				"msymSe",
+				"msymSensingRange"
+			],
+			[
+				"msym",
+				"msymSensingRange"
+			],
+			[
+				"msymDecision",
+				"msymDecisionSensorspaceposes"
+			],
+			[
+				"msymv",
+				"msymVfov"
+			],
+			[
+				"msymDe",
+				"msymDecisionSensorspacepose"
+			],
+			[
+				"msymC",
+				"msymSensorspaceposition"
+			],
+			[
+				"sym",
+				"symvector"
+			],
+			[
+				"si",
+				"fig:simpleenvironment"
+			],
+			[
+				"en",
+				"ensuremath"
+			],
+			[
+				"msy",
+				"msymNumSensorspacepositions"
+			],
+			[
+				"ms",
+				"msymsensorspaceposition"
+			],
+			[
+				"k",
+				"kcoverage"
+			],
+			[
+				"sensor",
+				"sensorselected"
+			],
+			[
+				"samepl",
+				"sameplaceoverlapping"
+			],
+			[
+				"work",
+				"workspacepose"
+			],
+			[
+				"senso",
+				"sensorspacepose"
+			],
+			[
+				"visib",
+				"visibilitymatrix"
+			],
+			[
+				"num",
+				"numpositions"
+			],
+			[
+				"subse",
+				"subsection"
+			],
+			[
+				"son",
+				"Song2011: Distributed Wide Area Scene Analysis in Reconfigurable Camera Networks"
+			],
+			[
+				"mitt",
+				"  Mittal2007: A General Method for Sensor Planning in Multi-Sensor Systems: Extension to Random Occlusion"
+			],
+			[
+				"co",
+				"color_scheme"
+			],
+			[
+				"se",
+				"set"
+			],
+			[
+				"set",
+				"settings"
+			]
+		]
+	},
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"no",
+				"SublimeREPL: Node"
+			],
+			[
+				"nod",
+				"SublimeREPL: Node"
+			],
+			[
+				"lis",
+				"Package Control: List Packages"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"rena",
+				"File: Rename"
+			],
+			[
+				"in",
+				"Indent XML"
+			],
+			[
+				"ind",
+				"Indent XML"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"pack dis",
+				"Package Control: Discover Packages"
+			],
+			[
+				"cl",
+				"LaTeXing: Clean up (Remove) all Nonessential Files"
+			],
+			[
+				"latex ",
+				"LaTeXing: Rebuild Cache"
+			],
+			[
+				"lat sy",
+				"LaTeXing: Synchronise Remote Data"
+			],
+			[
+				"dic",
+				"Dictionaries: Set Language"
+			],
+			[
+				"cle",
+				"LaTeXing: Clean up (Remove) all Nonessential Files"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"re",
+				"Vintageous: Reset"
+			],
+			[
+				"res",
+				"Vintageous: Reset"
+			],
+			[
+				"rese",
+				"Vintageous: Reset"
+			],
+			[
+				"sid",
+				"View: Toggle Side Bar"
+			],
+			[
+				"ch",
+				"LaTeXing: Check System"
+			],
+			[
+				"k",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"cha",
+				"Change List: Show"
+			],
+			[
+				"side",
+				"View: Toggle Side Bar"
+			],
+			[
+				"si",
+				"View: Toggle Side Bar"
+			],
+			[
+				"disc",
+				"Package Control: Discover Packages"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"sett",
+				"Preferences: Settings - User"
+			],
+			[
+				"settin",
+				"Preferences: LaTeXing Settings - User"
+			],
+			[
+				"cach",
+				"LaTeXing: Rebuild Cache"
+			],
+			[
+				"cac",
+				"LaTeXing: Rebuild Cache"
+			],
+			[
+				"boo",
+				"Bookmarks: Toggle"
+			],
+			[
+				"ke",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"user",
+				"Preferences: Settings - User"
+			],
+			[
+				"latexin ",
+				"Preferences: LaTeXing Settings - User (Extended)"
+			],
+			[
+				"latex set",
+				"Preferences: LaTeXing Settings - User"
+			],
+			[
+				"bu",
+				"Build: Choose Quick Build"
+			],
+			[
+				"latex se",
+				"Preferences: LaTeXing Settings - User (Extended)"
+			],
+			[
+				"ca",
+				"LaTeXing: Rebuild Cache"
+			],
+			[
+				"min",
+				"View: Toggle Minimap"
+			],
+			[
+				"reset",
+				"Vintageous: Reset"
+			],
+			[
+				"vinta",
+				"Vintageous: Open .vintageousrc"
+			],
+			[
+				"clea",
+				"Build: Clean up Files"
+			],
+			[
+				"late op",
+				"LaTeXing: Open PDF"
+			],
+			[
+				"lat cl",
+				"LaTeXing: Clean up (Remove) all Nonessential Files"
+			],
+			[
+				"char",
+				"Character Table: Lookup Unicode Character"
+			],
+			[
+				"lat st",
+				"Preferences: LaTeXing Settings - User"
+			],
+			[
+				"lat set",
+				"Preferences: LaTeXing Settings - User"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"setti",
+				"Preferences: LaTeXing Settings - Default"
+			],
+			[
+				"di",
+				"Package Control: Disable Package"
+			],
+			[
+				"sho",
+				"LaTeXing: Show Log Panel"
+			],
+			[
+				"log",
+				"LaTeXing: Show Log Panel"
+			],
+			[
+				"tem",
+				"LaTeXing: Clean Temporary Output Dictionary"
+			],
+			[
+				"line",
+				"Line Ending to all views: Windows"
+			],
+			[
+				"setting",
+				"Preferences: Settings - User"
+			],
+			[
+				"exten",
+				"Preferences: LaTeXing Settings - Default (Extended)"
+			],
+			[
+				"extend",
+				"Preferences: LaTeXing Settings - User (Extended)"
+			],
+			[
+				"late set",
+				"Preferences: LaTeXing Settings - User"
+			],
+			[
+				"te",
+				"LaTeXing: Clean Temporary Output Dictionary"
+			],
+			[
+				"pref",
+				"Preferences: Settings - User"
+			],
+			[
+				"show",
+				"LaTeXing: Show Log Panel"
+			],
+			[
+				"temp",
+				"LaTeXing: Clean Temporary Output Dictionary"
+			],
+			[
+				"lat sett",
+				"Preferences: LaTeXing Settings - User"
+			],
+			[
+				"clen",
+				"LaTeXing: Clean up (Remove) all Nonessential Files"
+			],
+			[
+				"la opt",
+				"Snippet: LaTeXing Option PDF Name"
+			],
+			[
+				"roo",
+				"Snippet: LaTeXing Option Root File"
+			],
+			[
+				"late se",
+				"Preferences: LaTeXing Settings - Default (Extended)"
+			],
+			[
+				"latexin",
+				"Preferences: LaTeXing Settings - Default"
+			],
+			[
+				"pre",
+				"Preferences: Package Control Settings – User"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"su",
+				"Preferences: Settings - User"
+			],
+			[
+				"mini",
+				"View: Toggle Minimap"
+			],
+			[
+				"latexing set",
+				"Preferences: LaTeXing Settings - Default"
+			],
+			[
+				"settings",
+				"Preferences: LaTeXing Settings - Default"
+			],
+			[
+				"latexing",
+				"Preferences: LaTeXing Settings - User"
+			],
+			[
+				"late",
+				"LaTeXing: Rebuild Cache"
+			],
+			[
+				"pa",
+				"Package Control: Disable Package"
+			],
+			[
+				"defaul",
+				"Preferences: Settings - Default"
+			],
+			[
+				"proj",
+				"Project: Edit"
+			],
+			[
+				"synt late",
+				"Set Syntax: LaTeXing"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"syntax tex",
+				"Set Syntax: TeX"
+			],
+			[
+				"syn lat",
+				"Set Syntax: LaTeXing"
+			],
+			[
+				"syn late",
+				"Set Syntax: LaTeX"
+			],
+			[
+				"oni",
+				"LaTeXing: Online Lookup"
+			],
+			[
+				"q",
+				"Git: Quick Commit"
+			],
+			[
+				"add",
+				"Git: Quick Add"
+			],
+			[
+				"qui",
+				"Git: Quick Status"
+			],
+			[
+				"git",
+				"SublimeGit: Documentation"
+			],
+			[
+				"latex",
+				"LaTeXing: Install License"
+			],
+			[
+				"che",
+				"LaTeXing: Check System"
+			],
+			[
+				"check",
+				"LaTeXing: Check System"
+			],
+			[
+				"lat",
+				"LaTeXing: Texcount"
+			],
+			[
+				"save",
+				"File: Save All"
+			],
+			[
+				"togg",
+				"View: Toggle Side Bar"
+			],
+			[
+				"tikz",
+				"Set Syntax: TikZ"
+			],
+			[
+				"split",
+				"Snippet: Split"
+			],
+			[
+				"jso",
+				"JSON Reindent: reindent file or selection"
+			],
+			[
+				"cas",
+				"Convert Case: Swap Case"
+			],
+			[
+				"upp",
+				"Convert Case: Upper Case"
+			],
+			[
+				"pac",
+				"Package Control: List Packages"
+			],
+			[
+				"tran",
+				"BingTranslator: Reverse Translate"
+			],
+			[
+				"bui",
+				"Build: Build"
+			],
+			[
+				"pus",
+				"Git: Push"
+			],
+			[
+				"comm",
+				"Git: Quick Commit"
+			],
+			[
+				"tr",
+				"BingTranslator: Translate"
+			],
+			[
+				"matl",
+				"Set Syntax: MATLAB"
+			],
+			[
+				"pu",
+				"Git: Push"
+			],
+			[
+				"git com",
+				"Git: Quick Commit"
+			],
+			[
+				"the",
+				"Weblookup: Thesaurus Selection"
+			],
+			[
+				"commi",
+				"Git: Quick Commit"
+			],
+			[
+				"gi",
+				"Git: Status"
+			],
+			[
+				"goo",
+				"SmartGoogle: Search from selction"
+			],
+			[
+				"bi",
+				"BingTranslator: Translate"
+			],
+			[
+				"th",
+				"Thesaurus search"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"bin",
+				"BingTranslator: Translate"
+			],
+			[
+				"vie",
+				"View: Toggle Side Bar"
+			],
+			[
+				"kei",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"ren",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"",
+				"BingTranslator: Translate"
+			],
+			[
+				"smar",
+				"SmartGoogle: Search from selction"
+			],
+			[
+				"instl",
+				"Package Control: Install Package"
+			],
+			[
+				"gitcon",
+				"Set Syntax: Git Config"
+			]
+		],
+		"width": 402.0
+	},
+	"console":
+	{
+		"height": 335.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os; pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": false,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/nick/Projects/Internal/hackthehouse/test.js",
+		"/C/Users/nick/Downloads/OmegaLog_1424526251918.txt",
+		"/C/tmp/AVL/tools/xds/plugins/com.avl.ditest.dicore.common_1.1.0.201502021115/com/avl/ditest/dicore/common/log/Logger$1.java",
+		"/C/tmp/AVL/tools/xds/plugins/com.avl.ditest.dicore.LogProperties_1.0.0.201502021115/log4j.properties",
+		"/C/tmp/AVL/tools/xds/plugins/com.avl.ditest.dicore.resources.standard_1.0.0.201502021115/layout/layout_functionsOverview.html",
+		"/C/tmp/AVL/tools/xds/plugins/com.avl.ditest.dicore.diflow.dependencies_1.1.0.201502021115/com/avl/ditest/dicore/diflow/ecud/IWakeupDescription.java",
+		"/C/tmp/AVL/tools/xds/plugins/com.avl.ditest.dicore.xmlbeans_1.0.0/org/apache/xmlbeans/impl/store/DomImpl$WrongDocumentErr.java",
+		"/C/tmp/AVL/tools/xds/plugins/com.avl.ditest.dicore.xmlbeans_1.0.0/META-INF/INDEX.LIST",
+		"/C/tmp/AVL/tools/xds/plugins/com.avl.ditest.dicore.diflow.dependencies_1.1.0.201502021115/com/avl/ditest/dicore/diflow/flow/IEcuDescriptor.java",
+		"/C/tmp/AVL/tools/xds/plugins/com.avl.ditest.dicore.diflow.dependencies_1.1.0.201502021115/com/avl/ditest/dicore/repository/IECUDomain.java",
+		"/C/tmp/AVL/tools/xds/plugins/com.avl.ditest.dicore.xmlbeans_1.0.0/org/apache/xmlbeans/InterfaceExtension.java",
+		"/C/tmp/AVL/tools/xds/plugins/com.avl.ditest.dicore.xmlbeans_1.0.0/schemaorg_apache_xmlbeans/identityconstraint/http_3A_2F_2Fwww_2Ew3_2Eorg_2F2001_2FXMLSchema/identityConstraint.xsb",
+		"/C/tmp/AVL/tools/xds/plugins/com.avl.ditest.dicore.resources.standard_1.0.0.201502021115/content/ecudetailview.xmi",
+		"/C/tmp/AVL/tools/xds/plugins/com.avl.ditest.dicore.diflow.dependencies_1.1.0.201502021115/com/avl/ditest/dicore/diflow/flash/EcuConfigExecutor.java",
+		"/C/tmp/AVL/tools/xds/plugins/com.avl.ditest.dicore.xmlbeans_1.0.0/org/apache/xmlbeans/impl/jam/internal/JamServiceImpl.java",
+		"/C/tmp/AVL/tools/xds/plugins/com.avl.ditest.dicore.print_1.0.0.201502021115/com/avl/ditest/dicore/print/PrintServiceImpl.java",
+		"/C/tmp/AVL/tools/xds/plugins/com.avl.ditest.dicore.xml_1.0.0.201502021115/com/avl/ditest/dicore/xml/XMLConverterServiceImpl.java",
+		"/C/tmp/AVL/tools/xds/plugins/com.avl.ditest.dicore.featurelist_1.0.0.201502021115/com/avl/ditest/dicore/featurelist/internal/FeatureListServiceImpl.java",
+		"/C/tmp/AVL/tools/xds/plugins/com.avl.ditest.dicore.xmlbeans_1.0.0/org/apache/xmlbeans/impl/jam/internal/JamServiceContextImpl.java",
+		"/C/tmp/AVL/tools/xds/plugins/com.avl.ditest.dicore.xmlbeans_1.0.0/org/apache/xmlbeans/impl/jam/provider/JamServiceFactoryImpl.java",
+		"/C/tmp/AVL/tools/xds/plugins/com.avl.ditest.dicore.xmlbeans_1.0.0/org/apache/xmlbeans/impl/store/Saver$XmlInputStreamSaver$CommentImpl.java",
+		"/C/tmp/AVL/tools/xds/plugins/com.avl.ditest.dicore.xmlbeans_1.0.0/org/apache/xmlbeans/impl/store/Saver$XmlInputStreamSaver$CharacterDataImpl.java",
+		"/C/tmp/AVL/tools/xds/plugins/com.avl.ditest.dicore.dixws_1.0.0.201502021115/com/avl/ditest/dicore/dixws/generated/DixRemoteDeviceManagerStub$ExtensionMapper.java",
+		"/C/tmp/AVL/tools/xds/plugins/com.avl.ditest.dicore.xmlbeans_1.0.0/org/apache/xmlbeans/impl/store/Saver$XmlInputStreamSaver$ChangePrefixMappingImpl.java",
+		"/C/tmp/AVL/tools/xds/plugins/com.avl.ditest.dicore.dixws_1.0.0.201502021115/com/avl/ditest/dicore/dixws/generated/CoreVehicleManagerStub$ExtensionMapper.java",
+		"/C/tmp/AVL/tools/xds/plugins/com.avl.ditest.dicore.dixws_1.0.0.201502021115/com/avl/ditest/dicore/dixws/generated/DixRemoteDeviceManagerStub$LockDeviceResponse$1.java",
+		"/C/tmp/AVL/tools/xds/plugins/com.avl.ditest.dicore.dixws_1.0.0.201502021115/com/avl/ditest/dicore/dixws/generated/DixRemoteDeviceManagerStub$LockDeviceResponse.java",
+		"/C/tmp/AVL/tools/xds/plugins/com.avl.ditest.dicore.dixws_1.0.0.201502021115/com/avl/ditest/dicore/dixws/generated/DixRemoteDeviceManagerStub$UnlockDeviceResponse$1.java",
+		"/C/tmp/AVL/tools/xds/plugins/com.avl.ditest.dicore.remote_1.0.0.201502021115/META-INF/services.xml",
+		"/C/tmp/AVL/tools/xds/plugins/com.avl.ditest.dicore.xmlbeans_1.0.0/schemaorg_apache_xmlbeans/type/http_3A_2F_2Fwww_2Ew3_2Eorg_2F2001_2FXMLSchema/simpleExplicitGroup.xsb",
+		"/C/tmp/AVL/tools/xds/plugins/com.avl.ditest.dicore.common_1.1.0.201502021115/com/avl/ditest/dicore/common/util/ServiceTracker.java",
+		"/C/tmp/AVL/tools/xds/plugins/com.avl.ditest.dicore.xmlbeans_1.0.0/org/apache/xmlbeans/impl/jam/provider/JamServiceContext.java",
+		"/C/tmp/AVL/tools/xds/plugins/com.avl.ditest.dicore.gui_1.0.0.201502021115/com/avl/ditest/dicore/gui/IStyleSettings.java",
+		"/C/tmp/AVL/tools/xds/plugins/com.avl.ditest.dicore.xmlbeans_1.0.0/org/apache/xmlbeans/impl/piccolo/util/IntStack.java",
+		"/C/Users/nick/Projects/GitHub/vim_shortcut_wallpaper/README.markdown",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Figures/RadialPolygonDecompositionExplained.tikz",
+		"/C/Users/nick/Projects/Dissertation/common/symbols.tex",
+		"/C/Users/nick/Projects/SensorPositioning/Sensorplacement/tmp/small_flat/gsss/ssc__310_340_.lp",
+		"/C/Users/nick/Projects/Dissertation/Thesis/diss-config.tex",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Diss_Kirchhof.tex",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Figures/Sensoroverlap.tikz",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Figures/sensoroverlap.tex",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Figures/Sensormodel.tikz",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Chapters/SensorPositioning.tex",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Chapters/Introduction.tex",
+		"/C/Users/nick/Projects/Dissertation/common/acronyms.tex",
+		"/C/Users/nick/Projects/SensorPositioning/Sensorplacement/tmp/conference_room/bspqm_qscale/bspqm_sol_0_80_0_0.7z",
+		"/C/Users/nick/Projects/Dissertation/Thesis/FrontBackmatter/Contents.tex",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Figures/ConvexDecompositionWithoutSteinerPoints.tikz",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Chapters/SensorPoseCalibration.tex",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Figures/MergedEdgePolygonIntersection.tikz",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Figures/ThesisSetup.tikz",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Tikz/Sensormodel.dpth",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Figures/sensormodel_content.tikz",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Figures/sensoroverlap_content.tikz",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Figures/SensorSampling.tikz",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Figures/VfovIntersectionInvalidPolygon.tikz",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Figures/vfov_visible_content.tikz",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Figures/vfov_obstacle_overlapping.tikz",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Figures/vfov_visible.tex",
+		"/C/Users/nick/Projects/Dissertation/common/Create-Snippets.ps1",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Figures/SimplePolygonExample.tikz",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Tikz/ThesisSetup.dpth",
+		"/C/Users/nick/Projects/Dissertation/Thesis/CompiledTikz/ThesisSetup.pdf",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Tikz/ClassesOfPolygons.dpth",
+		"/C/Users/nick/Projects/Dissertation/Thesis/CompiledTikz/ClassesOfPolygons.pdf",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Figures/ThiloSetup.tikz",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Figures/TriangulationHertelMehlhorn.tikz",
+		"/C/Users/nick/Projects/Dissertation/Thesis/FrontBackmatter/Bibliography.tex",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Diss_Kirchhof.log",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Tikz/gbsinroom.pdf",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Figures/doptriangulation_content.pdf",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Figures/ScQKellyVsQualityFunction.pdf",
+		"/C/Users/nick/Projects/Senvion/C18234/trunk/Entwicklung/Sourcecode/SystemManager/RELEASE/2014-12-19_RELEASE-04-00-07/mconfig.ini",
+		"/C/Users/nick/Projects/Dissertation/Thesis/CompiledTikz/ThiloSetup.pdf",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Diss_Kirchhof.synctex.gz(busy)",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Tikz/ThiloSetup.log",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Tikz/ThiloSetup.pdf",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Tikz/ThiloSetup.dpth",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Diss_Kirchhof.docx",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Diss_Kirchhof.bcf",
+		"/C/Users/nick/Projects/Dissertation/Thesis/diss.sublime-project",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Figures/ScQKellyVsQualityFunction.tikz",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Figures/QualityKellyVsProperties_1.tikz",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Figures/QualityKellyVsProperties_2.tikz",
+		"/C/Users/nick/Projects/Senvion/C18234/trunk/Entwicklung/Sourcecode/SystemManager/Configuration_Files/parVarDataSysman.xml",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Figures/DecomposedSmallFlat.tikz",
+		"/C/Users/nick/Projects/Dissertation/common/definitions.tex",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Chapters/DiscreteModels.tex",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Tikz/DecomposedP1-01-EtPart.dpth",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Tikz/DecomposedP1-01-EtPart.log",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Figures/DecomposedP1-01-EtPart.tikz",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Tikz/DecomposedSmallFlat.md5",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Tikz/DecomposedSmallFlat.log",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Tikz/DecomposedSmallFlat.dpth",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Tikz/DecomposedP1-Seminarraum.md5",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Tikz/DecomposedP1-Seminarraum.log",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Tikz/DecomposedP1-Seminarraum.dpth",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Tikz/DecomposedLargeFlat.md5",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Tikz/DecomposedLargeFlat.log",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Tikz/DecomposedLargeFlat.dpth",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Figures/DecomposedP1-Seminarraum.tikz",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Mindmaps/DisDo.mm",
+		"/C/Users/nick/Projects/Dissertation/Thesis/FrontBackmatter/Dedication.tex",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Figures/DecomposedLargeFlat.tikz",
+		"/C/Users/nick/Projects/Dissertation/Thesis/FrontBackmatter/Declaration.tex",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Chapters/Experiments.tex",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Figures/PolygonEvaluationSzenario.tikz",
+		"/C/Users/nick/Projects/Extensions/Src/mex/polypartition/polypartition/polypartition.cpp",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Figures/TriangulationEarClipping.tikz",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Figures/TriangulationOptimalLength.tikz",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Figures/triangulation_12degFov10mdist_errorEval.tex",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Figures/doptriangulation_content.tikz",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Figures/doptriangulation.tex",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Figures/triangulation_6degFov10mdist_errorEval.fig.tikz",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Figures/triangulation_24degFov10mdist_errorEval.fig.tikz",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Figures/triangulation_12degFov10mdist_errorEval.fig.tikz",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Figures/triangulation_10degFov_errorEval.fig.tikz",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Figures/triangulation_6degFov10mdist_errorEval.tex",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Figures/triangulation_24degFov10mdist_errorEval.tex",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Outline.docx",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Doc/Acro/example_one.tex",
+		"/C/Users/nick/Projects/SensorPositioning/Extensions/lib/ext_geom2d_addons.m",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Figures/ScQKellyVsInterpointDistance.tikz",
+		"/C/Users/nick/Projects/Dissertation/Thesis/Tikz/RadialPolygonDecompositionExplained.dpth",
+		"/C/Users/nick/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/nick/AppData/Roaming/Sublime Text 3/Packages/User/Default.sublime-keymap",
+		"/C/Users/nick/AppData/Roaming/Sublime Text 3/Packages/LaTeXing/Default (Windows).sublime-keymap"
+	],
+	"find":
+	{
+		"height": 29.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"<open folders>, package-info.java",
+			"<open folders>",
+			"<open folders>,*.tex, *.tikz",
+			"<open folders>,*.tex,",
+			"<open folders>,*.tex, *.tikz, *.sty",
+			"<open folders>,*.tex, *.tikz",
+			"<open folders>",
+			"Thesis",
+			"<open files>",
+			"C:\\Users\\Nico\\PortableApps\\SublimeText2.X.x64\\Data\\Packages\\User\\Snippets\\dissmath",
+			"*.tex"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"regex",
+			"javad",
+			"52",
+			"41 00 98 3b a0 13",
+			"@author\\ nick",
+			"support",
+			"run",
+			"todo",
+			"error",
+			"figure",
+			"width=",
+			"error",
+			"\\\\delfigure",
+			"\\\\addfigure",
+			"\\\\myfloatalign",
+			"delfi",
+			"sub-",
+			"Sub-",
+			"sub-",
+			"Sub-",
+			"sub-",
+			"Sub-",
+			"sub-",
+			"sp",
+			"enumerate",
+			"algorithms",
+			"\\\\mathr",
+			"\\\\boxdot",
+			"\\boxdot",
+			"\\min\\{1-\\frac{d^n_{i,j}\\cdot d^n_{i',j}}{2\\sin(\\phi)}, 0\\}",
+			"eqn:qualityfromkelly",
+			"eqn:gdop:triangulation",
+			"fig:preprocessing:gdop:uncertainty:custom",
+			"delfi",
+			"aligned",
+			"equation",
+			"align",
+			"fig:preprocessing:gdop:difference:interpoint",
+			"align",
+			"E_c",
+			"e_i",
+			"erro",
+			"environment",
+			"\\\\che",
+			"rang",
+			"grid",
+			"m@dip",
+			"dip",
+			"sensor",
+			"diss",
+			"loca",
+			"custo",
+			"deter",
+			"sensors",
+			"build",
+			"custom",
+			"0\\.52",
+			"0.52",
+			"siz",
+			"leng",
+			"lam",
+			"fov",
+			"field",
+			"line width=1.0pt,",
+			"trian",
+			"error",
+			"akbar",
+			"fontspec",
+			"png",
+			"\\\\in",
+			"png",
+			"\\\\in",
+			"dotsc",
+			"delfi",
+			"polygonsp",
+			"uncerta",
+			"delf",
+			"types",
+			"vp",
+			"gbsin",
+			"addfigure",
+			"\\deg",
+			"addfigure",
+			"tikz",
+			"sampling",
+			"error",
+			"triang",
+			"error",
+			"preprocessing",
+			"=",
+			"build",
+			"buildn",
+			"ctrl+b",
+			"plain",
+			"foot",
+			"error",
+			"errorn",
+			"error",
+			"utf8",
+			"error",
+			"\\\\\\w*section",
+			"\\\\\\s*section",
+			"\\\\?*section",
+			"\\*section",
+			"section",
+			"delfi",
+			"lienha",
+			"lienhart",
+			"infr",
+			"noremap",
+			"this",
+			"a",
+			" \n",
+			"\n\\",
+			"addplot",
+			"color",
+			"]{",
+			"{",
+			"addplot",
+			"{",
+			"dashed",
+			"{",
+			"}\n",
+			"node",
+			"models",
+			"\\che",
+			"fov",
+			"x"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"",
+			"E_r",
+			"v_i",
+			"m@dcl",
+			"\\\\oldacro$1",
+			"\\oldacro{pc}",
+			"tbp",
+			"m@Vfov",
+			"\\REF",
+			"bigO",
+			"\\aca{m@Si''}",
+			"\\aca{m@S}",
+			"S",
+			"\\aca{m@Si'}",
+			"\\aca{m@Si''}",
+			"S",
+			"\\acs{m@S}",
+			"\\acs{m@Sp}",
+			"\\acs{m@S}",
+			"\\aca{m@S}",
+			"\\aca{m@Sp}",
+			"\\aca{m@S}",
+			"\\acs{m@vm}",
+			"\\aca{m@vm}",
+			"\\aca{m@Csso}",
+			"\\acs{m@Csso}",
+			"m@vm",
+			"\\acs{m@vm}",
+			"\\ace{m@vm}",
+			"\\acs{m@vm}",
+			"\\acs{m@Css}",
+			"\\aca{m@Css}",
+			"m@phi",
+			"``",
+			"''",
+			"``",
+			"20$3-$2-$1",
+			"m@Qsw",
+			"m@xv",
+			"m@xs",
+			"m@cs",
+			"m@csi",
+			"m@xsi",
+			"m@xvc",
+			"m@Qswij",
+			"m@l",
+			"m@m",
+			"m@n",
+			"m@Theta",
+			"m@H-1",
+			"m@xvc",
+			"\\aca*{m@xis}",
+			"m@xi's",
+			"m@xis",
+			"m@Omega",
+			"m:Omega",
+			"m@d",
+			"m@Omega",
+			"m@Psi",
+			"m@cis",
+			"msymPsi",
+			"msymOmega",
+			"ac{thilo}",
+			"acrocmd",
+			"mark size=2.5pt",
+			"mark size=1.8pt",
+			"{spn}s",
+			"{sc}si",
+			"{sc}s",
+			"{vfov}s",
+			"{wpn}s",
+			"{sp}s",
+			"white!90!black",
+			"{pcsd}",
+			"{wpn}",
+			"{pcs}",
+			"{pa}",
+			"\\ac{pcso}",
+			"\\ac{pc}",
+			"\\ac{pa}",
+			"\\ac{pcsd}",
+			"\\ac{wpn}",
+			"marks,line width=1pt,",
+			"size=0.2",
+			"0.2",
+			"0.1",
+			"size=0.01",
+			"mark=o,line width=1pt,",
+			"color=white!0!black",
+			"color=white!40!black",
+			"line width=2.5pt",
+			"\\acrodef",
+			"line width=2.5pt",
+			"mark size=2.5pt",
+			"white!50!black",
+			"white!20!black",
+			"white!70!black",
+			"mark=x",
+			"*",
+			"\\ac{wpn}",
+			"msymIndexSensorspace",
+			"\\acs*",
+			"msymIndexWorkspace",
+			"\\ac{wpn}",
+			"white!60!black",
+			"\\ac",
+			"table[x index=1, y index=0, row sep=crcr]",
+			"symmatrix",
+			"symvector",
+			"symmatrix",
+			"symvector",
+			"\\ac{msyminnerangle}",
+			"\\acrodef",
+			"\\ac*{fov}",
+			"\\ac*{mip}",
+			"\\ac*{gdop}",
+			"\\ac*{bip}",
+			"\\ac*{vfov}",
+			"\\ac*",
+			"\\acrodef",
+			"\\newacro",
+			"\\ac{css}",
+			"\\ac{cp}",
+			"\\ac{spp}",
+			"\\ac{wp}",
+			"\\ac{sc}",
+			"WALL",
+			"Weblookup"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 164.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 112.0
+	},
+	"output.git-commit":
+	{
+		"height": 124.0
+	},
+	"output.unicode_preview":
+	{
+		"height": 682.0
+	},
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				".g",
+				".gitconfig.backup"
+			],
+			[
+				".gi",
+				".gitconfig"
+			],
+			[
+				"logg",
+				"com.avl.ditest.dicore.common_1.1.0.201502021115\\com\\avl\\ditest\\dicore\\common\\log\\Logger.java"
+			],
+			[
+				"iwake",
+				"com.avl.ditest.dicore.diflow.dependencies_1.1.0.201502021115\\com\\avl\\ditest\\dicore\\diflow\\flow\\IWakeupFlow.java"
+			],
+			[
+				"iecudo",
+				"com.avl.ditest.dicore.diflow.dependencies_1.1.0.201502021115\\com\\avl\\ditest\\dicore\\repository\\IECUDomain.java"
+			],
+			[
+				"iecuv",
+				"com.avl.ditest.dicore.diflow.dependencies_1.1.0.201502021115\\com\\avl\\ditest\\dicore\\diflow\\ecud\\IECUVariant.java"
+			],
+			[
+				"ecuv",
+				"com.avl.ditest.dicore.diflow.dependencies_1.1.0.201502021115\\com\\avl\\ditest\\dicore\\diflow\\ecud\\ECUVariantProxy.java"
+			],
+			[
+				"servicerunnable",
+				"com.avl.ditest.dicore.diflow.dependencies_1.1.0.201502021115\\com\\avl\\ditest\\dicore\\diflow\\ecud\\IServiceRunnable$ESemantics.java"
+			],
+			[
+				"servicerun",
+				"com.avl.ditest.dicore.diflow.dependencies_1.1.0.201502021115\\com\\avl\\ditest\\dicore\\diflow\\ecud\\IServiceRunnable.java"
+			],
+			[
+				"iserv",
+				"com.avl.ditest.dicore.diflow.dependencies_1.1.0.201502021115\\com\\avl\\ditest\\dicore\\diflow\\ecud\\IServiceRunnable.java"
+			],
+			[
+				"pre",
+				"Thesis\\Chapters\\Preprocessing.tex"
+			],
+			[
+				"sen",
+				"Thesis\\Chapters\\SensorPositioning.tex"
+			],
+			[
+				"ex",
+				"Thesis\\Chapters\\Experiments.tex"
+			],
+			[
+				"dis",
+				"Thesis\\Diss_Kirchhof.tex"
+			],
+			[
+				"app",
+				"Thesis\\Chapters\\Approximations.tex"
+			],
+			[
+				"discre",
+				"Thesis\\Chapters\\DiscreteModels.tex"
+			],
+			[
+				"cont",
+				"Thesis\\Chapters\\ContinuousModels.tex"
+			],
+			[
+				"sensord",
+				"Thesis\\Figures\\SensorDegreeGT1.tikz"
+			],
+			[
+				"mat",
+				"Thesis\\Figures\\MatchingGraph.tikz"
+			],
+			[
+				"sensorp",
+				"Thesis\\Chapters\\SensorPositioning.tex"
+			],
+			[
+				"t",
+				"Thesis\\Figures\\ThesisSetup.tikz"
+			],
+			[
+				"thi",
+				"Thesis\\Figures\\ThiloSetup.tikz"
+			],
+			[
+				"in",
+				"Thesis\\Chapters\\Introduction.tex"
+			],
+			[
+				"ac",
+				"common\\acronyms.tex"
+			],
+			[
+				"d",
+				"Thesis\\Diss_Kirchhof.tex"
+			],
+			[
+				"sensorm",
+				"Thesis\\Figures\\Sensormodel.tikz"
+			],
+			[
+				"sens",
+				"Thesis\\Figures\\Sensormodel.tikz"
+			],
+			[
+				"vfo",
+				"Thesis\\Figures\\vfov_visible_content.tikz"
+			],
+			[
+				"vfov_o",
+				"Thesis\\Figures\\vfov_obstacle_overlapping.tikz"
+			],
+			[
+				"sensor",
+				"Thesis\\Chapters\\SensorPositioning.tex"
+			],
+			[
+				"gbs",
+				"Thesis\\Figures\\GbsInRoom.tikz"
+			],
+			[
+				"contin",
+				"Thesis\\Chapters\\ContinuousModels.tex"
+			],
+			[
+				"th",
+				"Thesis\\Figures\\ThesisSetup.tikz"
+			],
+			[
+				"di",
+				"Thesis\\diss-config.tex"
+			],
+			[
+				"the",
+				"Thesis\\Figures\\ThesisSetup.tikz"
+			],
+			[
+				"test",
+				"Thesis\\Figures\\TestingFigures.tex"
+			],
+			[
+				"sc",
+				"Thesis\\Figures\\ScQKellyVsQualityFunction.tikz"
+			],
+			[
+				"scq",
+				"Thesis\\Figures\\ScQKellyVsPolygonArea.tikz"
+			],
+			[
+				"a",
+				"common\\acronyms.tex"
+			],
+			[
+				"s",
+				"common\\symbols.tex"
+			],
+			[
+				"radmov",
+				"Thesis\\Figures\\RadialMovePolygonIntersection.tikz"
+			],
+			[
+				"appr",
+				"Thesis\\Chapters\\Approximations.tex"
+			],
+			[
+				"constein",
+				"Thesis\\Figures\\ConvexDecompositionWithSteinerPoints.tikz"
+			],
+			[
+				"hert",
+				"Thesis\\Figures\\TriangulationHertelMehlhorn.tikz"
+			],
+			[
+				"rad",
+				"Thesis\\Figures\\RadialPolygonDecompositionExplained.tikz"
+			],
+			[
+				"decom",
+				"Thesis\\Figures\\DecomposedP1-01-EtPart.tikz"
+			],
+			[
+				"radi",
+				"Thesis\\Figures\\RadialMovePolygonIntersection.tikz"
+			],
+			[
+				"mer",
+				"Thesis\\Figures\\MergedEdgePolygonIntersection.tikz"
+			],
+			[
+				"dec",
+				"Thesis\\Figures\\DecomposedSmallFlat.tikz"
+			],
+			[
+				"tr",
+				"Thesis\\Figures\\TriangulationHertelMehlhorn.tikz"
+			],
+			[
+				"trian",
+				"Thesis\\Figures\\TriangulationOptimalLength.tikz"
+			],
+			[
+				"qc",
+				"Thesis\\Figures\\QScKellyContours_14m.tikz"
+			],
+			[
+				"qsck",
+				"Thesis\\Figures\\QScKellyContours_8m.tikz"
+			],
+			[
+				"qsc",
+				"Thesis\\Figures\\QScKellyContours_2m.tikz"
+			],
+			[
+				"inter",
+				"Thesis\\Figures\\ScQKellyVsInterpointDistance.tikz"
+			],
+			[
+				"areadi",
+				"Thesis\\Figures\\ScQKellyVsPolygonAreaDiff.tikz"
+			],
+			[
+				"area",
+				"Thesis\\Figures\\ScQKellyVsPolygonArea.tikz"
+			],
+			[
+				"interpoindiff",
+				"Thesis\\Figures\\ScQKellyVsInterpointDistanceDiff.tikz"
+			],
+			[
+				"interpoi",
+				"Thesis\\Figures\\ScQKellyVsInterpointDistance.tikz"
+			],
+			[
+				"scqu",
+				"Thesis\\Figures\\ScQKellyVsQualityFunction.tikz"
+			],
+			[
+				"scqk",
+				"Thesis\\Figures\\ScQKellyVsInterpointDistance.tikz"
+			],
+			[
+				"scqardi",
+				"Thesis\\Figures\\ScQKellyVsPolygonAreaDiff.tikz"
+			],
+			[
+				"scqtikz",
+				"Thesis\\Figures\\ScQKellyVsPolygonArea.tikz"
+			],
+			[
+				"scqpo",
+				"Thesis\\Figures\\ScQKellyVsPolygonAreaDiff.tikz"
+			],
+			[
+				"polygo",
+				"Thesis\\Figures\\PolygonEvaluationSzenario.tikz"
+			],
+			[
+				"qu",
+				"Thesis\\Figures\\QualityKellyVsCustom_4.tikz"
+			],
+			[
+				"gdop",
+				"Thesis\\Figures\\gdop_trilateration.tikz"
+			],
+			[
+				"polygon",
+				"Thesis\\Figures\\PolygonEvaluationSzenario.tikz"
+			],
+			[
+				"polygone",
+				"Thesis\\Figures\\PolygonEvaluationSzenario.tikz"
+			],
+			[
+				"qke",
+				"Thesis\\Figures\\QualityKellyVsCustom_1.tikz"
+			],
+			[
+				"sy",
+				"common\\symbols.tex"
+			],
+			[
+				"def",
+				"common\\definitions.tex"
+			],
+			[
+				"conti",
+				"Thesis\\Chapters\\ContinuousModels.tex"
+			],
+			[
+				"pr",
+				"Thesis\\Chapters\\Preprocessing.tex"
+			],
+			[
+				"con",
+				"Thesis\\Figures\\ConvexDecompositionWithoutSteinerPoints.tikz"
+			],
+			[
+				"ap",
+				"Thesis\\Chapters\\Approximations.tex"
+			],
+			[
+				"",
+				"Thesis\\Chapters\\Approximations.tex"
+			],
+			[
+				"disc",
+				"Thesis\\Chapters\\DiscreteModels.tex"
+			],
+			[
+				"k",
+				"Thesis\\Diss_Kirchhof.tex"
+			],
+			[
+				"p",
+				"Thesis\\Chapters\\Preprocessing.tex"
+			],
+			[
+				"q",
+				"Thesis\\Figures\\QualityKellyVsProperties_2.tikz"
+			],
+			[
+				"gd",
+				"Thesis\\Figures\\gdop_trilateration.tikz"
+			],
+			[
+				"gdo",
+				"Thesis\\Figures\\gdop_trilateration.tikz"
+			],
+			[
+				"tik",
+				"Thesis\\Figures\\ThesisSetup.tikz"
+			],
+			[
+				"sensom",
+				"Thesis\\Figures\\Sensormodel.tikz"
+			],
+			[
+				"sensormti",
+				"Thesis\\Figures\\Sensormodel.tikz"
+			],
+			[
+				"v",
+				"Thesis\\Figures\\VfovIntersectionInvalidPolygon.tikz"
+			],
+			[
+				"ty",
+				"Thesis\\Figures\\TypesOfSpikes.tikz"
+			],
+			[
+				"qua",
+				"Thesis\\Figures\\QualityKellyVsCustom_3.tikz"
+			],
+			[
+				"bib",
+				"common\\library.bib"
+			],
+			[
+				"quali",
+				"Thesis\\Figures\\QualityKellyVsCustom.tikz"
+			],
+			[
+				"sensoro",
+				"Thesis\\Figures\\sensoroverlap_content.tikz"
+			],
+			[
+				"po",
+				"Thesis\\Figures\\PolygonSpike.tikz"
+			],
+			[
+				"unc",
+				"Thesis\\Figures\\UncertaintyRegion0vs180deg.tikz"
+			],
+			[
+				"vf",
+				"Thesis\\Figures\\vfov_visible_content.tikz"
+			],
+			[
+				"g",
+				"Thesis\\Figures\\GbsInRoom.tikz"
+			],
+			[
+				"gb",
+				"Thesis\\Figures\\GbsInRoom.tikz"
+			],
+			[
+				"de",
+				"common\\definitions.tex"
+			],
+			[
+				"sensors",
+				"Thesis\\Figures\\SensorSampling.tikz"
+			],
+			[
+				"tikz",
+				"Thesis\\Figures\\SensorSampling.tikz"
+			],
+			[
+				"poly",
+				"Thesis\\Figures\\PolygonSpike.tikz"
+			],
+			[
+				"sensorsam",
+				"Thesis\\Figures\\SensorSampling.tikz"
+			],
+			[
+				"sensorsp",
+				"Thesis\\Figures\\SensorSampling.tikz"
+			],
+			[
+				"confi",
+				"Thesis\\diss-config.tex"
+			],
+			[
+				"sensop",
+				"Thesis\\Chapters\\SensorPositioning.tex"
+			],
+			[
+				"pres",
+				"Thesis\\Figures\\PreprocessingSetup.fig"
+			],
+			[
+				"log",
+				"Thesis\\Diss_Kirchhof.log"
+			],
+			[
+				"classes",
+				"Thesis\\Figures\\ClassesOfPolygons.tikz"
+			],
+			[
+				"sensm",
+				"Thesis\\Figures\\sensormodel_content.tikz"
+			],
+			[
+				"sim",
+				"Thesis\\Figures\\SimplePolygonExample.tex"
+			],
+			[
+				"pose",
+				"Thesis\\Chapters\\SensorPoseCalibration.tex"
+			],
+			[
+				"comm",
+				"Thesis\\Chapters\\SensorPositioningComments.tex"
+			],
+			[
+				"com",
+				"Thesis\\Chapters\\SensorPositioningComments.tex"
+			],
+			[
+				"not",
+				"common\\notations.tex"
+			],
+			[
+				"kir",
+				"Thesis\\Diss_Kirchhof.tex"
+			],
+			[
+				"acr",
+				"common\\acronyms.tex"
+			],
+			[
+				"todo",
+				"Thesis\\Chapters\\Todo.tex"
+			],
+			[
+				"df",
+				"common\\definitions.tex"
+			],
+			[
+				"sensorpo",
+				"Thesis\\Chapters\\SensorPoseCalibration.tex"
+			],
+			[
+				"mod",
+				"Thesis\\Chapters\\DiscreteModels.tex"
+			],
+			[
+				"thesis",
+				"Thesis\\Figures\\ThesisSetup.tikz"
+			],
+			[
+				"ki",
+				"Thesis\\Diss_Kirchhof.tex"
+			],
+			[
+				"posi",
+				"Thesis\\Chapters\\SensorPositioningComments.tex"
+			],
+			[
+				"se",
+				"Thesis\\Chapters\\SensorPositioning.tex"
+			],
+			[
+				"e",
+				"Thesis\\Chapters\\Experiments.tex"
+			],
+			[
+				"senso",
+				"Thesis\\Chapters\\SensorPoseCalibration.tex"
+			],
+			[
+				"diss_",
+				"Thesis\\Diss_Kirchhof.tex"
+			],
+			[
+				"bi",
+				"Thesis\\FrontBackmatter\\Bibliography.tex"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/Users/Nico/Workspace/nico.staff/ipin2013paper.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"settings":
+	{
+		"vintage":
+		{
+		}
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 352.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
