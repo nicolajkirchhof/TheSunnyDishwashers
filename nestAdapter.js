@@ -25,8 +25,9 @@ var nestAdapter = (function () {
             else if (snapshot.val().structures.RR7_f6h6A2g8cddNQM3yfzA_R4B7_tc2HEz2TUGLYmecWxVN8wsCqw.away == 'away') {
                 console.log("I'm Away");
                 receiver.absenceDetected();
-            } else {
+            } else { // AutoAbsence may be used for improved away mode
                 console.log("I'm Auto");
+                receiver.absenceDetected();
             }
         }
 
