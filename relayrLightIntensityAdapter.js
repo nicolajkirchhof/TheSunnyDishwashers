@@ -18,17 +18,14 @@ var relayrLightIntensityAdapter = (function () {
     relayr.connect(token, dev_id);
 
     // Listen and do stuff
-console.log('registering');
+    console.log('registering');
     relayr.on('data', function (topic, msg) {
-        //console.log(topic + ":" + msg);
         //console.log(msg);
         msg.readings.forEach(function (elem){
            if (elem.meaning == 'luminosity'){
                changeListener(Math.max(0, Math.min(100, Math.round(elem.value*100/1800))));
            } 
         });
-
-
     });
 
 
@@ -39,7 +36,7 @@ console.log('registering');
          *
          * @param (function(int)) callback that receives the current intensity of detected light as a percentage. Int value between 0 and 100;
          */
-        onDishwasherStateChange : function(callback)
+        onLightIntensityChanged : function(callback)
         {
             changeListener = callback;
         }

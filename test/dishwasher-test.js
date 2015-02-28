@@ -131,6 +131,33 @@ describe('DishWasher module', function(){
 
             mockAppliance.runCount.should.equal(1);
             done();
+        }),
+
+        it('should not tell the appliance to run when it is already running', function(done) {
+            mockAppliance.reset();
+
+            dishWasher.setPresence(mockPresence);
+            dishWasher.setApplianceAdapter(mockAppliance);
+
+            mockPresence.setPresence(true);
+            mockPresence.setPresence(true);
+
+            mockAppliance.runCount.should.equal(1);
+            done();
+        }),
+
+        it('should not tell the appliance to start again if the command has not been accepted', function(done) {
+            mockAppliance.reset();
+            mockAppliance.willFail = true;
+
+            dishWasher.setPresence(mockPresence);
+            dishWasher.setApplianceAdapter(mockAppliance);
+
+            mockPresence.setPresence(true);
+            mockPresence.setPresence(true);
+
+            mockAppliance.runCount.should.equal(2);
+            done();
         })
     })
 })

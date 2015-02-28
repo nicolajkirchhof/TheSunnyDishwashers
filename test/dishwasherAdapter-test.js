@@ -13,7 +13,7 @@ describe('dishwasherAdapter module', function(){
         //    done();
         //})
 
-        it('should resturn true after start and false after stop', function(done){
+        it('should return true after start and false after stop', function(done){
             dishwasherAdapter.run(done, function(){});
 
             //setTimeout(function() {
@@ -21,7 +21,7 @@ describe('dishwasherAdapter module', function(){
             //}, 5000);
         })
 
-        it('should resturn true after start and false after stop', function(done){
+        it('should return true after start and false after stop', function(done){
             dishwasherAdapter.stop(done, function(){});
         })
 
