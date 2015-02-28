@@ -30,7 +30,7 @@ var power = (function () {
         },
 
         // Callback for power state changes
-        onPowerstateChanged: function(callback) {
+        onPowerStateChanged: function(callback) {
           powerStateChangedCallback = callback;
         },
 

@@ -1,4 +1,3 @@
-
 // Unit tests for power module
 var should = require('should');
 var enums = require('.././enums');
@@ -56,7 +55,7 @@ describe('Power module', function(){
             mockLightSensor.setLightIntensity(0);
 
             powerStateChangeCount = 0;
-            power.onPowerstateChanged(observePowerStateChanges);
+            power.onPowerStateChanged(observePowerStateChanges);
 
             mockLightSensor.setLightIntensity(100);
 
@@ -70,7 +69,7 @@ describe('Power module', function(){
             mockLightSensor.setLightIntensity(100);
 
             powerStateChangeCount = 0;
-            power.onPowerstateChanged(observePowerStateChanges);
+            power.onPowerStateChanged(observePowerStateChanges);
 
             mockLightSensor.setLightIntensity(0);
 
@@ -86,7 +85,7 @@ describe('Power module', function(){
             mockLightSensor.setLightIntensity(90);
 
             powerStateChangeCount = 0;
-            power.onPowerstateChanged(observePowerStateChanges);
+            power.onPowerStateChanged(observePowerStateChanges);
 
             // then move to 80: that should not trigger the event.
             mockLightSensor.setLightIntensity(80);
