@@ -1,3 +1,13 @@
+// -------------
+// Implements an abstract controller that provides the application
+// with the information if people are present in the house.
+// The controller is reactive: is accepts callbacks from the connected
+// sensors and raises events accordingly.
+// The current implementation just knows if people are there or not,
+// an interesting extension would be to work with an ETA and start
+// the appliances earlier, accordingly.
+// --------------
+
 var presence = (function () {
 
     // privates

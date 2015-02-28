@@ -1,3 +1,14 @@
+// -------------
+// Implements an abstract controller that provides the application
+// with the information how the status of the renewable power
+// is.
+// The controller is reactive: is accepts callbacks from the connected
+// sensors and raises events accordingly.
+// The current implementation uses the light sensor and quite dumbly
+// assumes that power is STRONG when it reports more than 50% of
+// light intensity.
+// --------------
+
 var enums = require('./enums.js');
 
 var power = (function () {

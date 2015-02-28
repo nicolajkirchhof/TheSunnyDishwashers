@@ -1,3 +1,7 @@
+// --------------
+// Procides non-magic constant values for usage throughout the application.
+// --------------
+
 exports.powerStateEnum = {
     // dunno. Used to detect uninitialized state
     UNDEFINED : 0,

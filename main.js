@@ -1,5 +1,6 @@
-
-// The MIGHTY MIGHTY SUNNY DISHWASHER
+// ==========
+// The MIGHTY MIGHTY SUNNY DISHWASHER's bootstrap module.
+// ==========
 
 // ----------
 // For production run, DI-integrate the modules.

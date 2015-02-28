@@ -1,7 +1,11 @@
 var enums = require('./enums.js');
 
 // ---------------
-// Represents the business-logic side of the dishwasher.
+// Implements an abstract controller that controls the dishwasher, depending
+// on the status of the availability of renewable energy and presence of
+// people in the house.
+// The controller is reactive: is accepts callbacks from the connected
+// sensors and raises events accordingly.
 // For adding more appliances (ovens, tumblers...) probably a similar kind of
 // functionality is needed, but for now we'd rather not speculate. Feel
 // free to refactor.

@@ -1,7 +1,7 @@
-/**
- * Created by fji on 28.02.2015.
- */
-
+// ------------
+// Connects the abstract power controller to
+// an actual Wunderbar through the relayr API.
+// ------------
 var relayrLightIntensityAdapter = (function () {
 
     var relayr = require('./relayrApp');

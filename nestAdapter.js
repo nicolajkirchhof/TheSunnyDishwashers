@@ -1,3 +1,11 @@
+// ------------
+// Connects the abstract presence controller to
+// an actual NEST thermostat.
+// THIS CONTAINS THE NEST DEV ACCOUNT. If you plan to use
+// this outside a hackathon event - well - you might consider
+// putting them somewhere safe.
+// ------------
+
 var nestAdapter = (function () {
 
     var Firebase = require('firebase');
