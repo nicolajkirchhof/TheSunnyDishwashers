@@ -24,20 +24,21 @@ var power = (function () {
     };
 
   return {
-    // DI: light sensor adapter
-    setLightSensor: function(lightSensor) {
-      lightSensor.onLightIntensityChanged = function(lightIntensity) {
-        setLightIntensity(lightIntensity);       
-      };
-    },
+        // DI: light sensor adapter
+        setLightSensor: function(lightSensor) {
+          lightSensor.onLightIntensityChanged = function(lightIntensity) {
+            setLightIntensity(lightIntensity);
+          };
+        },
 
-    // Callback for power state changes
-    onPowerstateChanged: function(callback) {
-      powerStateChangedCallback = callback;
-    },
+        // Callback for power state changes
+        onPowerstateChanged: function(callback) {
+          powerStateChangedCallback = callback;
+        },
 
-    // Enum for states
-    powerState: powerState
+        powerState: powerState,
+
+        powerStates: powerStateEnum
   };
 })();
 
