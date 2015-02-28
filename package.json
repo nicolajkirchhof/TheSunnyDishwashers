@@ -1,0 +1,11 @@
+{
+    "name": "TheSunnyDishwasher",
+  "version": "0.0.1",
+  "description": "Control your home applience",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "relayr": "*"
+  },
+  "readme": "README.md"
+}
