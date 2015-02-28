@@ -30,3 +30,4 @@ node_modules
 #Webstorm
 .idea
 .idea/TheSunnyDishwashers.iml
+.idea/workspace.xml

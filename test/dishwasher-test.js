@@ -6,7 +6,6 @@ var should = require('should');
 var enums = require('.././enums');
 var dishWasher = require('.././dishwasher');
 
-
 describe('DishWasher module', function(){
 
     var mockPower = (function () {
