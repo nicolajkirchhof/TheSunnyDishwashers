@@ -38,7 +38,7 @@ console.log('registering');
          *
          * @param (function(int)) callback that receives the current intensity of detected light as a percentage. Int value between 0 and 100;
          */
-        onLightIntensityChanged : function(callback)
+        onDishwasherStateChange : function(callback)
         {
             changeListener = callback;
         }
