@@ -1,7 +1,6 @@
 var Relayr = require('relayr');
 
 var app_id = "790fb358-7172-4682-93d8-a079407c5cb7";
-//var dev_id = "497000a7-fd33-400f-9f83-845717a6f268";
 var dishwasher01_id = "e7ad3208-59d6-4757-bced-ba3d77c9274e";
 var token = "vlZlJC5CK.vRxapRVyd9ecP1kokpL3M6";
 var command_power_on = {"path": "power_unit", "command": "power", "value": 2};

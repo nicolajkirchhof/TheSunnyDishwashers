@@ -39,11 +39,6 @@ var presence = (function () {
             });
         }
 
-        // Public alias to a  private function
-        //presenceDetected: presenceDetectedPrivate,
-
-        //absenceDetected: absenceDetectedPrivate
-
     };
 })();
 

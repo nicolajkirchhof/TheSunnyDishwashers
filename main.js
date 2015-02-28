@@ -4,7 +4,9 @@
 // For production run, DI-integrate the modules.
 // ----------
 // presence
+var nest = require('./nestAdapter');
 var presence = require('./presence');
+presence.registerPresenceProvider(nest);
 
 // power
 var lightSensor = require('./relayrLightIntensityAdapter');
@@ -17,4 +19,3 @@ var dishWasher = require('./dishwasher');
 dishWasher.setApplianceAdapter(dishWasherApplianceAdapter);
 dishWasher.setPower(power);
 dishWasher.setPresence(presence);
-
