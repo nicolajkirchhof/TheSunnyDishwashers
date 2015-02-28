@@ -36,4 +36,12 @@ relayr.command(token, dishwasher01_id, command_programme_brilliance, commandTest
 var command_programme_brilliance_off = {"path": "programme", "command": "brilliance_dry", "value": false};
 relayr.command(token, dishwasher01_id, command_programme_brilliance_off, commandTestFun);
 
+var command_start_eco_50 = {"path":"raw", "command":565,"value":{"enum": [{"program":8196,"options":[{"uid":5123,"value":false},{"uid":5124,"value":false},{"uid":5128,"value":false},{"uid":5127,"value":false},{"uid":5126,"value":false}]}]}};
+relayr.command(token, dishwasher01_id, command_start_eco_50, commandTestFun);
+
+var command_stop_program = {"path":"raw", "command":512,"value":true};
+relayr.command(token, dishwasher01_id, command_stop_program, commandTestFun);
+
+
+var dishwasherAdapter = require('./dishwasherAdapter');
 
