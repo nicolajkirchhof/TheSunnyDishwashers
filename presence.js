@@ -7,13 +7,15 @@ var presence = (function () {
     var callback = null;
 
     var presenceDetectedPrivate = function () {
-        if (callback !== null) {
+        if (callback !== null && !isPresent){
+            isPresent = true;
             callback(true);
         }
     };
 
     var absenceDetectedPrivate = function () {
-        if (callback !== null) {
+        if (callback !== null && isPresent) {
+            isPresent = false;
             callback(false);
         }
     };

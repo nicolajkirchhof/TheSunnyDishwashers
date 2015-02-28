@@ -51,7 +51,7 @@ var dishwasherAdapter = (function () {
         run: function (success, fail) {
             relayr.command(token, dishwasher01_id, command_power_on, function (err, user) {
                 console.log(err || user);
-                if (err !== null){
+                if (err === null){
                     success();
                 }
                 else {
@@ -68,7 +68,7 @@ var dishwasherAdapter = (function () {
         stop: function (success, fail) {
             relayr.command(token, dishwasher01_id, command_power_off, function (err, user) {
                 console.log(err || user);
-                if (err != null) {
+                if (err === null) {
                     success();
                 }
                 else {

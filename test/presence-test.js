@@ -24,7 +24,9 @@ describe('Presence module', function(){
         })
 
         it('should not notify if state does not change', function(done){
-            presence.onPresenceChanged()
+            var mockFun = function(state){if (state){done()}};
+            presence.onPresenceChanged(mockFun);
+            presence.presenceDetected();
         })
 
         //it('should be WEAK by default', function(done){
