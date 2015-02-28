@@ -1,10 +1,15 @@
 var dishwasherAdapter = (function () {
 
+    // ------------
+    // Connects the abstract dishWasher controller to
+    // an actual HomeConnect dishwasher via the relayr API.
+    // Since that API is not complete at the moment, we hab to use quite a
+    // lot of raw commands here.
+    // ------------
     var relayr = require('./relayrApp');
 
     var command_power_on = {"path": "power_unit", "command": "power", "value": 2};
     var command_power_off = {"path": "power_unit", "command": "power", "value": 1};
-
 
     // Connect using the keys:
     relayr.app.connect(relayr.authToken, relayr.dishwasherId);

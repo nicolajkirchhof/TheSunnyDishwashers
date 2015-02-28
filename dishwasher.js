@@ -1,5 +1,12 @@
 var enums = require('./enums.js');
 
+// ---------------
+// Represents the business-logic side of the dishwasher.
+// For adding more appliances (ovens, tumblers...) probably a similar kind of
+// functionality is needed, but for now we'd rather not speculate. Feel
+// free to refactor.
+// ---------------
+
 var dishWasher = (function () {
 
     var applianceAdapter = null;
