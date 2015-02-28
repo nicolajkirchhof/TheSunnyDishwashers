@@ -1,0 +1,36 @@
+<div class="jumbotron" >
+    <div class="dg">
+       <!--<H1>The Sunny Dishwasher Monitor</H1>
+        <ng-dial-gauge id="gauge_light"
+                       scale-min="0"
+                       scale-max="100"
+                       border-width="1"
+                       ng-model="gauge_light"
+                       bar-color="pink"
+                       bar-width="6"
+                       units="%"
+                       angle="135"
+                       rotate="180"
+                       line-cap="round"
+                       style="stroke:blue;font-weight:100;">
+        </ng-dial-gauge>
+        <div>
+            <div class="statusLabel" ng-class="{active: powerState.isActive}">
+
+                <span>{{powerState.label}}</span>
+            </div>
+            Power state
+        </div>
+        -->
+
+        <img class="statusImage statusImagePowerActive" ng-hide="!powerState.isActive" src="images/power_state_active.png">
+        <img class="statusImage statusImagePowerInActive" ng-hide="powerState.isActive" src="images/power_state_inactive.png">
+
+        <img class="statusImage" ng-hide="!isPresent.isActive" src="images/is_present_active.png">
+        <img class="statusImage" ng-hide="isPresent.isActive" src="images/is_present_inactive.png">
+
+
+        <button ng-click="refresh();">Refresh</button>
+
+    </div>
+</div>

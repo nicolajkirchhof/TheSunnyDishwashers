@@ -12,6 +12,7 @@ app.get('/',function(req,res){
 });
 
 app.get('/status', function(req, res) {
+    res.header('Access-Control-Allow-Origin', '*');
     res.send(status.getUpdate());
 });
 
