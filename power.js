@@ -2,21 +2,22 @@ var power = (function () {
 
   var powerStateEnum = {
       STRONG : 1,
-      WEAK : 2
+      WEAK : 0
     };
 
   var MIN_STRONG_LIGHT_INTENSITY = 50;
 
   var powerStateChangedCallback;
-  var powerState = powerStateEnum.WEAK;
+  var currentPowerState = powerStateEnum.WEAK;
 
   var setLightIntensity = function(lightIntensity) {
-     
+
       // Enough light for strong power output?
-      var newPowerState = lightIntensity < MIN_STRONG_LIGHT_INTENSITY ? powerStateEnum.STRONG : powerStateEnum.WEAK;
-     
-      // Change in state?
-      if (newPowerState == powerState) return;
+      var newPowerState =  powerStateEnum.WEAK;
+      if(MIN_STRONG_LIGHT_INTENSITY <= lightIntensity) newPowerState = powerStateEnum.STRONG;
+
+      if (newPowerState === currentPowerState) return;
+      currentPowerState = newPowerState;
 
       // well then... announce new power state.
       if (!powerStateChangedCallback) return;
@@ -26,9 +27,9 @@ var power = (function () {
   return {
         // DI: light sensor adapter
         setLightSensor: function(lightSensor) {
-          lightSensor.onLightIntensityChanged = function(lightIntensity) {
+          lightSensor.onLightIntensityChanged(function(lightIntensity) {
             setLightIntensity(lightIntensity);
-          };
+          });
         },
 
         // Callback for power state changes
@@ -36,7 +37,7 @@ var power = (function () {
           powerStateChangedCallback = callback;
         },
 
-        powerState: powerState,
+        getPowerState: function() { return currentPowerState },
 
         powerStates: powerStateEnum
   };
