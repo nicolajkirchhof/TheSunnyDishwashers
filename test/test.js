@@ -36,3 +36,5 @@ relayr.command(token, dishwasher01_id, command_programme_brilliance, commandTest
 
 var command_programme_brilliance_off = {"path": "programme", "command": "brilliance_dry", "value": false};
 relayr.command(token, dishwasher01_id, command_programme_brilliance_off, commandTestFun);
+
+

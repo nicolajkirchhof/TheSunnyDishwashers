@@ -3,43 +3,62 @@
 var should = require('should');
 var presence = require('.././presence');
 
-var mockLightSensor = (function () {
+var mockNestAdapter = (function () {
 
+    var receiver = null;
+
+    /**/    // Return an object exposed to the public
     return {
-        setLightIntensity : null,
 
-        onLightIntensityChanged : function(callback)
-        {
-            this.setLightIntensity = callback;
+        onPresenceUpdate: function(listener){
+            receiver = listener;
+        },
+
+        callPresenceDetected: function(){
+            if(receiver !== null)
+            {
+                receiver.presenceDetected();
+            }
+        },
+
+        callAbsenceDetected: function(){
+            if(receiver !== null)
+            {
+                receiver.absenceDetected();
+            }
         }
+
+
     };
 })();
-
 describe('Presence module', function(){
 
     describe('onPresenceChanged', function(){
-        it('should be false at begin', function(done){
-            presence.isPresent().should.equal(false);
-            done();
-        })
+        it('should forward presence detected event', function(done){
+            presence.registerPresenceProvider(mockNestAdapter);
+            presence.onPresenceChanged(function(state){
+                if (state === true){
+                    done();
+                }
+                else{
+                    error("Failed");
+                }
+            });
+            mockNestAdapter.callPresenceDetected();
+        });
 
-        it('should not notify if state does not change', function(done){
-            var mockFun = function(state){if (state){done()}};
-            presence.onPresenceChanged(mockFun);
-            presence.presenceDetected();
-        })
+        it('should forward presence detected event', function(done){
+            presence.registerPresenceProvider(mockNestAdapter);
+            presence.onPresenceChanged(function(state){
+                if (state === false){
+                    done();
+                }
+                else{
+                    error("Failed");
+                }
+            });
+            mockNestAdapter.callAbsenceDetected();
+        });
 
-        //it('should be WEAK by default', function(done){
-        //    power.getPowerState().should.equal(power.powerStates.WEAK);
-            //done();
-        //})
-
-        //it('should change when light sensor sends intensity = 50', function(done){
-        //    power.setLightSensor(mockLightSensor);
-        //    mockLightSensor.setLightIntensity(51);
-        //
-        //    power.getPowerState().should.equal(power.powerStates.STRONG);
-        //    done();
-        //})
-    })
-})
+    });
+});
