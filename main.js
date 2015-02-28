@@ -1,6 +1,8 @@
+// ==========
+// The MIGHTY MIGHTY SUNNY DISHWASHER's bootstrap module.
+// ==========
 
-// The MIGHTY MIGHTY SUNNY DISHWASHER
-
+// ----------
 // For production run, DI-integrate the modules.
 // ----------
 // presence
@@ -19,3 +21,9 @@ var dishWasher = require('./dishwasher');
 dishWasher.setApplianceAdapter(dishWasherApplianceAdapter);
 dishWasher.setPower(power);
 dishWasher.setPresence(presence);
+
+// ----------
+// Start web service to provide status info
+// ----------
+var webservice = require('./webservice/webapp');
+webservice.start();

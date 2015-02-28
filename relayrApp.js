@@ -1,7 +1,13 @@
+// ------------
+// Connects to the relayr sensor cloud.
+// THIS CONTAINS THE RELAYR DEV ACCOUNT KEYS. If you plan to use
+// this outside a hackathon event - well - you might consider
+// putting them somewhere safe.
+// ------------
 
 var Relayr = require('relayr');
 
-// Singular relayr application
+// Connects to the Relayr cloud. We also collect all the keys here
 var relayr = (function(){
     var appId = "790fb358-7172-4682-93d8-a079407c5cb7";
     var relayrApp = new Relayr(appId);
