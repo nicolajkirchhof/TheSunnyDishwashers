@@ -4,30 +4,20 @@
 
 var relayrLightIntensityAdapter = (function () {
 
-    var Relayr = require('relayr');
-
-    var app_id = "790fb358-7172-4682-93d8-a079407c5cb7";
-    var dev_id = "497000a7-fd33-400f-9f83-845717a6f268";
-    var token  = "vlZlJC5CK.vRxapRVyd9ecP1kokpL3M6";
-
-    // Initialise the libary
-
-    var relayr = new Relayr(app_id);
+    var relayr = require('./relayrApp');
 
     // Connect using the keys:
-    relayr.connect(token, dev_id);
+    relayr.app.connect(relayr.authToken, relayr.wunderbarId);
 
     // Listen and do stuff
-console.log('registering');
-    relayr.on('data', function (topic, msg) {
-        //console.log(topic + ":" + msg);
+    console.log('registering');
+    relayr.app.on('data', function (topic, msg) {
         //console.log(msg);
-        msg.forEach(function (elem){
+        msg.readings.forEach(function (elem){
            if (elem.meaning == 'luminosity'){
-               changeListener(Math.round(elem.value*100/1024));
+               changeListener(Math.max(0, Math.min(100, Math.round(elem.value*100/1800))));
            } 
         });
-
     });
 
 
@@ -38,7 +28,7 @@ console.log('registering');
          *
          * @param (function(int)) callback that receives the current intensity of detected light as a percentage. Int value between 0 and 100;
          */
-        onDishwasherStateChange : function(callback)
+        onLightIntensityChanged : function(callback)
         {
             changeListener = callback;
         }

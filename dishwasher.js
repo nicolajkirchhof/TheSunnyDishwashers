@@ -4,15 +4,32 @@ var dishWasher = (function () {
 
     var applianceAdapter = null;
     var directive = enums.applianceDirectiveEnum.WAIT;
+    var isRunning = false;
 
     var run = function() {
         directive = enums.applianceDirectiveEnum.RUN;
 
-        // Tell adapter to start the machine
+        // If the dishwasher has successfully been started, do not try to start it again
+        if (isRunning) return;
+
+        console.log('DISHWASHER RUN!');
+
+        // For the moment, just fire the Run command once and don't check result...
+        // ...better would be: retry, notify user
+        if(applianceAdapter) applianceAdapter.run(
+            function() {
+                isRunning = true;
+                console.log('DISHWASHER RUN command SUCCEEDED')
+            },
+            function() {
+                isRunning = false;
+                console.log('DISHWASHER RUN command FAILED')
+            } );
     };
 
     var reset = function() {
         directive = enums.applianceDirectiveEnum.WAIT;
+        isRunning = false;
     };
 
     var setPowerState = function(powerState) {
