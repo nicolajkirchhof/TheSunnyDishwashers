@@ -1,20 +1,17 @@
-var power = (function () {
+var enums = require('./enums.js');
 
-  var powerStateEnum = {
-      STRONG : 1,
-      WEAK : 0
-    };
+var power = (function () {
 
   var MIN_STRONG_LIGHT_INTENSITY = 50;
 
   var powerStateChangedCallback;
-  var currentPowerState = powerStateEnum.WEAK;
+  var currentPowerState = enums.powerStateEnum.WEAK;
 
   var setLightIntensity = function(lightIntensity) {
 
       // Enough light for strong power output?
-      var newPowerState =  powerStateEnum.WEAK;
-      if(MIN_STRONG_LIGHT_INTENSITY <= lightIntensity) newPowerState = powerStateEnum.STRONG;
+      var newPowerState =  enums.powerStateEnum.WEAK;
+      if(MIN_STRONG_LIGHT_INTENSITY <= lightIntensity) newPowerState = enums.powerStateEnum.STRONG;
 
       if (newPowerState === currentPowerState) return;
       currentPowerState = newPowerState;
@@ -33,13 +30,11 @@ var power = (function () {
         },
 
         // Callback for power state changes
-        onPowerstateChanged: function(callback) {
+        onPowerStateChanged: function(callback) {
           powerStateChangedCallback = callback;
         },
 
-        getPowerState: function() { return currentPowerState },
-
-        powerStates: powerStateEnum
+        getPowerState: function() { return currentPowerState }
   };
 })();
 
