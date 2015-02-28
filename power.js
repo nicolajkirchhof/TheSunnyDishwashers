@@ -1,46 +1,44 @@
 var power = (function () {
 
-  // privates
+  var powerStateEnum = {
+      STRONG : 1,
+      WEAK : 2
+    };
 
-  var basket = [];
+  var MIN_STRONG_LIGHT_INTENSITY = 50;
 
-  function doSomethingPrivate() {
-    //...
-  }
+  var powerStateChangedCallback;
+  var powerState = powerStateEnum.WEAK;
 
-  function doSomethingElsePrivate() {
-    //...
-  }
+  var setLightIntensity = function(lightIntensity) {
+     
+      // Enough light for strong power output?
+      var newPowerState = lightIntensity < MIN_STRONG_LIGHT_INTENSITY ? powerStateEnum.STRONG : powerStateEnum.WEAK;
+     
+      // Change in state?
+      if (newPowerState == powerState) return;
 
-  // Return an object exposed to the public
+      // well then... announce new power state.
+      if (!powerStateChangedCallback) return;
+      powerStateChangedCallback(newPowerState);
+    };
+
   return {
-
-    // Add items to our basket
-    addItem: function( values ) {
-      basket.push(values);
+    // DI: light sensor adapter
+    setLightSensor: function(lightSensor) {
+      lightSensor.onLightIntensityChanged = function(lightIntensity) {
+        setLightIntensity(lightIntensity);       
+      };
     },
 
-    // Get the count of items in the basket
-    getItemCount: function () {
-      return basket.length;
+    // Callback for power state changes
+    onPowerstateChanged: function(callback) {
+      powerStateChangedCallback = callback;
     },
 
-    // Public alias to a  private function
-    doSomething: doSomethingPrivate,
-
-    // Get the total value of items in the basket
-    getTotal: function () {
-
-      var q = this.getItemCount(),
-          p = 0;
-
-      while (q--) {
-        p += basket[q].price;
-      }
-
-      return p;
-    }
+    // Enum for states
+    powerState: powerState
   };
 })();
 
-// exports.templateModule = templateModule;
+module.exports = power;

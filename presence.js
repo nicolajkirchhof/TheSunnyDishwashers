@@ -1,46 +1,36 @@
 var presence = (function () {
 
-  // privates
+    // privates
 
-  var basket = [];
+    var callback = null;
 
-  function doSomethingPrivate() {
-    //...
-  }
+    var presenceDetectedPrivate = function () {
+        if (callback !== null) {
+            callback(true);
+        }
+    };
 
-  function doSomethingElsePrivate() {
-    //...
-  }
+    var absenceDetectedPrivate = function () {
+        if (callback !== null) {
+            callback(false);
+        }
+    };
 
-  // Return an object exposed to the public
-  return {
 
-    // Add items to our basket
-    addItem: function( values ) {
-      basket.push(values);
-    },
+    /**/    // Return an object exposed to the public
+    return {
 
-    // Get the count of items in the basket
-    getItemCount: function () {
-      return basket.length;
-    },
+        // Add items to our basket
+        onPresenceChanged: function (notifier) {
+            callback = notifier;
+        },
 
-    // Public alias to a  private function
-    doSomething: doSomethingPrivate,
+        // Public alias to a  private function
+        presenceDetected: presenceDetectedPrivate,
 
-    // Get the total value of items in the basket
-    getTotal: function () {
+        absenceDetected: absenceDetectedPrivate
 
-      var q = this.getItemCount(),
-          p = 0;
-
-      while (q--) {
-        p += basket[q].price;
-      }
-
-      return p;
-    }
-  };
+    };
 })();
 
-// exports.templateModule = templateModule;
+module.exports = presence;
