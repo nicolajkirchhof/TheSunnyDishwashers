@@ -1,6 +1,7 @@
 
 // Unit tests for power module
 var should = require('should');
+var enums = require('.././enums');
 var power = require('.././power');
 
 var mockLightSensor = (function () {
@@ -19,7 +20,7 @@ describe('Power module', function(){
 
     describe('powerState', function(){
         it('should be WEAK by default', function(done){
-            power.getPowerState().should.equal(power.powerStates.WEAK);
+            power.getPowerState().should.equal(enums.powerStateEnum.WEAK);
             done();
         })
 
@@ -27,7 +28,7 @@ describe('Power module', function(){
             power.setLightSensor(mockLightSensor);
             mockLightSensor.setLightIntensity(50);
 
-            power.getPowerState().should.equal(power.powerStates.STRONG);
+            power.getPowerState().should.equal(enums.powerStateEnum.STRONG);
             done();
         })
 
@@ -35,7 +36,7 @@ describe('Power module', function(){
             power.setLightSensor(mockLightSensor);
             mockLightSensor.setLightIntensity(49);
 
-            power.getPowerState().should.equal(power.powerStates.WEAK);
+            power.getPowerState().should.equal(enums.powerStateEnum.WEAK);
             done();
         })
     })
@@ -43,7 +44,7 @@ describe('Power module', function(){
     describe('onPowerStateChanged', function(){
 
         var powerStateChangeCount = 0;
-        var lastPowerState = power.powerStates.UNDEFINED;
+        var lastPowerState = enums.powerStateEnum.UNDEFINED;
         var observePowerStateChanges = function(powerState){
             powerStateChangeCount++;
             lastPowerState = powerState;
@@ -60,7 +61,7 @@ describe('Power module', function(){
             mockLightSensor.setLightIntensity(100);
 
             powerStateChangeCount.should.equal(1);
-            lastPowerState.should.equal(power.powerStates.STRONG);
+            lastPowerState.should.equal(enums.powerStateEnum.STRONG);
             done();
         })
 
@@ -74,7 +75,7 @@ describe('Power module', function(){
             mockLightSensor.setLightIntensity(0);
 
             powerStateChangeCount.should.equal(1);
-            lastPowerState.should.equal(power.powerStates.WEAK);
+            lastPowerState.should.equal(enums.powerStateEnum.WEAK);
             done();
         })
 

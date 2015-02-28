@@ -1,46 +1,43 @@
-var dishwasher = (function () {
+var enums = require('./enums.js');
 
-  // privates
+var dishWasher = (function () {
 
-  var basket = [];
+    var applianceAdapter = null;
+    var power = null;
+    var presence = null;
+    var directive = enums.applianceDirectiveEnum.UNDEFINED;
 
-  function doSomethingPrivate() {
-    //...
-  }
+    var run = function() {
+        directive = enums.applianceDirectiveEnum.RUN;
 
-  function doSomethingElsePrivate() {
-    //...
-  }
-
-  // Return an object exposed to the public
-  return {
-
-    // Add items to our basket
-    addItem: function( values ) {
-      basket.push(values);
-    },
-
-    // Get the count of items in the basket
-    getItemCount: function () {
-      return basket.length;
-    },
-
-    // Public alias to a  private function
-    doSomething: doSomethingPrivate,
-
-    // Get the total value of items in the basket
-    getTotal: function () {
-
-      var q = this.getItemCount(),
-          p = 0;
-
-      while (q--) {
-        p += basket[q].price;
-      }
-
-      return p;
+        // Tell adapter to start the machine
     }
-  };
+
+    var setPowerState = function(powerState) {
+       if (powerState === enums.powerStateEnum.STRONG) run();
+    };
+
+    return {
+        // DI: adapter to physical dishwasher appliance
+        setApplianceAdapter: function(dep) {
+            applianceAdapter = dep;
+        },
+
+        // DI: power state aggregator
+        setPower: function(dep) {
+            power.onPowerstateChanged(setPowerState);
+            power = dep;
+        },
+
+        // DI: power presence aggregator
+        setPresence: function(dep) {
+            presence = dep;
+        },
+
+        getDirective: function() { return directive },
+
+        directives: directiveEnum
+    };
 })();
 
-// exports.templateModule = templateModule;
+module.exports = dishWasher;
