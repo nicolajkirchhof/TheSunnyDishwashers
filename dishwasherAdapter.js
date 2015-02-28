@@ -1,20 +1,17 @@
 var dishwasherAdapter = (function () {
 
-    var Relayr = require('relayr');
-    var config = require('./config');
+    var relayr = require('./relayrApp');
 
     var command_power_on = {"path": "power_unit", "command": "power", "value": 2};
     var command_power_off = {"path": "power_unit", "command": "power", "value": 1};
 
-    // Initialise the library
-    var relayr = new Relayr(config.relayr.appId);
 
     // Connect using the keys:
-    relayr.connect(config.relayr.authToken, config.relayr.dishwasherId);
+    relayr.app.connect(relayr.authToken, relayr.dishwasherId);
 
     // Listen and do stuff
     console.log('registering');
-    relayr.on('data', function (topic, msg) {
+    relayr.app.on('data', function (topic, msg) {
 
         console.log(msg);
 
@@ -27,7 +24,7 @@ var dishwasherAdapter = (function () {
         },
 
         run: function (success, fail) {
-            relayr.command(token, dishwasher01_id, command_power_on, function (err, user) {
+            relayr.app.command(relayr.authToken, relayr.dishwasherId, command_power_on, function (err, user) {
                 console.log(err || user);
                 if (err === null){
                     if(success) success();
@@ -44,7 +41,7 @@ var dishwasherAdapter = (function () {
          * @param fail (function)
          */
         stop: function (success, fail) {
-            relayr.command(token, dishwasher01_id, command_power_off, function (err, user) {
+            relayr.app.command(relayr.authToken, relayr.dishwasherId, command_power_off, function (err, user) {
                 console.log(err || user);
                 if (err === null) {
                     success();
@@ -52,7 +49,6 @@ var dishwasherAdapter = (function () {
                 else {
                     fail();
                 }
-
             })
         }
 

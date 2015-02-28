@@ -4,18 +4,14 @@
 
 var relayrLightIntensityAdapter = (function () {
 
-    var Relayr = require('relayr');
-    var config = require('./config');
-
-    // Initialise the libary
-    var relayr = new Relayr(config.relayr.appId);
+    var relayr = require('./relayrApp');
 
     // Connect using the keys:
-    relayr.connect(config.relayr.authToken, config.relayr.wunderbarId);
+    relayr.app.connect(relayr.authToken, relayr.wunderbarId);
 
     // Listen and do stuff
     console.log('registering');
-    relayr.on('data', function (topic, msg) {
+    relayr.app.on('data', function (topic, msg) {
         //console.log(msg);
         msg.readings.forEach(function (elem){
            if (elem.meaning == 'luminosity'){
