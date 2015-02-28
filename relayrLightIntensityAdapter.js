@@ -7,7 +7,7 @@ var relayrLightIntensityAdapter = (function () {
     var Relayr = require('relayr');
 
     var app_id = "790fb358-7172-4682-93d8-a079407c5cb7";
-    var dev_id = "497000a7-fd33-400f-9f83-845717a6f268";
+    var dev_id = "f924183e-c786-4064-8707-accd2fa50c4a";
     var token  = "vlZlJC5CK.vRxapRVyd9ecP1kokpL3M6";
 
     // Initialise the libary
@@ -22,11 +22,12 @@ console.log('registering');
     relayr.on('data', function (topic, msg) {
         //console.log(topic + ":" + msg);
         //console.log(msg);
-        msg.forEach(function (elem){
+        msg.readings.forEach(function (elem){
            if (elem.meaning == 'luminosity'){
-               changeListener(Math.round(elem.value*100/1024));
+               changeListener(Math.max(0, Math.min(100, Math.round(elem.value*100/1800))));
            } 
         });
+
 
     });
 
