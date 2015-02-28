@@ -1,18 +1,16 @@
 var dishwasherAdapter = (function () {
 
     var Relayr = require('relayr');
+    var config = require('./config');
 
-    var app_id = "790fb358-7172-4682-93d8-a079407c5cb7";
-    var dishwasher01_id = "e7ad3208-59d6-4757-bced-ba3d77c9274e";
-    var token = "vlZlJC5CK.vRxapRVyd9ecP1kokpL3M6";
     var command_power_on = {"path": "power_unit", "command": "power", "value": 2};
     var command_power_off = {"path": "power_unit", "command": "power", "value": 1};
 
     // Initialise the library
-    var relayr = new Relayr(app_id);
+    var relayr = new Relayr(config.relayr.appId);
 
     // Connect using the keys:
-    relayr.connect(token, dishwasher01_id);
+    relayr.connect(config.relayr.authToken, config.relayr.dishwasherId);
 
     // Listen and do stuff
     console.log('registering');
