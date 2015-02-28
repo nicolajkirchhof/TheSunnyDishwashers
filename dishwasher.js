@@ -59,7 +59,9 @@ var dishWasher = (function () {
             dep.onPresenceChanged(setPresence);
         },
 
-        getDirective: function() { return directive }
+        getDirective: function() { return directive },
+
+        getIsRunning: function() { return isRunning }
     };
 })();
 
