@@ -11,7 +11,7 @@ var status = (function () {
                 powerState : power.getPowerState(),
                 isPresent : presence.isPresent(),
                 dishWasherIsRunning : dishWasher.getIsRunning(),
-                dishWasherIsReady : false
+                dishWasherIsReady : dishWasher.getIsReady()
             };
         }
     };

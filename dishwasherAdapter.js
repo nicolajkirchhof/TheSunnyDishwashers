@@ -54,7 +54,7 @@ var dishwasherAdapter = (function () {
                     var isUnitPowered = reading.value === '2';
 
                     // Use the callback once, then discard it. The callback is
-                    // set by the queryPowerState operation this module exposes.
+                    // set by the queryReadyState operation this module exposes.
                     if (unitPoweredCallback) unitPoweredCallback(isUnitPowered);
                     unitPoweredCallback = null;
                     break;
@@ -94,9 +94,9 @@ var dishwasherAdapter = (function () {
         // does not return the value. Instead, it more like entices the
         // appliance to drop the information into its log message stream,
         // an when we find it, we'll call it.
-        queryPowerState: function (callback) {
+        queryReadyState: function (callback) {
             unitPoweredCallback = callback;
-            sendRelayrCommand(command_query_power_on, unitPoweredCallback, null);
+            sendRelayrCommand(command_query_power_on, null, null);
         },
 
         // Mostly for testing purposes, send an arbitrary command to the appliance.

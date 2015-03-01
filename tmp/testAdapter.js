@@ -8,7 +8,7 @@ var dishwasherAdapter = require('.././dishwasherAdapter');
 //    })}, 4000);
 
 //setTimeout( function(){
-//dishwasherAdapter.queryPowerState(function(value){
+//dishwasherAdapter.queryReadyState(function(value){
 //    //if (value === 2){
 //        console.log("PowerState is" + value);
 //    //}

@@ -20,7 +20,7 @@ describe('dishwasherAdapter module', function(){
 
         it('should return boolean for power state', function(done){
 
-            dishwasherAdapter.queryPowerState(function(value){
+            dishwasherAdapter.queryReadyState(function(value){
                 if (typeof(value) == 'boolean'){
                     done();
                 }

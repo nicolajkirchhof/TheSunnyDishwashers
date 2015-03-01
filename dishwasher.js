@@ -19,6 +19,23 @@ var dishWasher = (function () {
     var applianceAdapter = null;
     var directive = enums.applianceDirectiveEnum.WAIT;
     var isRunning = false;
+    var isReady = false;
+
+    // Poll for a ready state of the appliance.
+    var pollReady = function() {
+        console.log('DISHWASHER CHECKING READY STATE...');
+        if (!applianceAdapter) return;
+
+        // Prevent overlapping query cycles
+        if (querying) return;
+        var querying = true;
+
+        applianceAdapter.queryReadyState(function(value){
+            isReady = value;
+            console.log('DISHWASHER READY STATE is ' + isReady);
+            querying = false;
+        })
+    }
 
     // Tell the dishwasher to run
     var run = function() {
@@ -28,11 +45,12 @@ var dishWasher = (function () {
         if (isRunning) return;
 
         console.log('DISHWASHER RUN...');
+        if (!applianceAdapter) return;
 
         // For the moment, just fire the Run command once and don't check result...
         // ...better would be: retry, notify user, try to find out what the heck happened
         // by getting detailed status
-        if(applianceAdapter) applianceAdapter.run(
+        applianceAdapter.run(
             function() {
                 isRunning = true;
                 console.log('DISHWASHER RUN SUCCEEDED')
@@ -89,12 +107,15 @@ var dishWasher = (function () {
         setApplianceAdapter: function(dep) {
             reset();
             applianceAdapter = dep;
+
+            // Start polling for the Ready state of the appliance
+            setInterval(pollReady, 2000);
         },
 
         // DI: power state aggregator
         setPower: function(dep) {
             reset();
-            dep.onPowerStateChanged(setPowerState);
+            dep.onPowerStateChanged(setPowerState)
         },
 
         // DI: power presence aggregator
@@ -107,7 +128,10 @@ var dishWasher = (function () {
         getDirective: function() { return directive },
 
         // Return if the appliance is running
-        getIsRunning: function() { return isRunning }
+        getIsRunning: function() { return isRunning },
+
+        // Return if the appliance is ready (powered and primed)
+        getIsReady: function() { return isReady }
     };
 })();
 
