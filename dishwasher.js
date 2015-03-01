@@ -17,6 +17,7 @@ var dishWasher = (function () {
     var directive = enums.applianceDirectiveEnum.WAIT;
     var isRunning = false;
 
+    // Tell the dishwasher to run
     var run = function() {
         directive = enums.applianceDirectiveEnum.RUN;
 
@@ -38,18 +39,22 @@ var dishWasher = (function () {
             } );
     };
 
+    // Reset the state of this controller - internal function to make DI reliable
     var reset = function() {
         directive = enums.applianceDirectiveEnum.WAIT;
         isRunning = false;
     };
 
+    // React to the Power controller to announce a changes state in
+    // the availability of solar power: run the appliance if STRONG
     var setPowerState = function(powerState) {
        if (powerState === enums.powerStateEnum.STRONG) run();
     };
 
+    // React to the Presence controller to announce that someone is at home
     var setPresence = function(isAnybodyThere) {
         if (isAnybodyThere) run();
-    } ;
+    };
 
     return {
         // DI: adapter to physical dishwasher appliance
@@ -70,8 +75,10 @@ var dishWasher = (function () {
             dep.onPresenceChanged(setPresence);
         },
 
+        // Return if the appliance should run
         getDirective: function() { return directive },
 
+        // Return if the appliance is running
         getIsRunning: function() { return isRunning }
     };
 })();
