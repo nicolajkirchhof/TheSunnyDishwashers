@@ -24,6 +24,7 @@ var nestAdapter = (function () {
 
     var receiver = null;
 
+
     nestConnection.on('value', function(snapshot){
         if (receiver !== null) {
             if (snapshot.val().structures.RR7_f6h6A2g8cddNQM3yfzA_R4B7_tc2HEz2TUGLYmecWxVN8wsCqw.away == 'home') {

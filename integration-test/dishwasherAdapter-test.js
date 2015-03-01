@@ -1,7 +1,7 @@
 
 // Unit tests for power module
 var should = require('should');
-var dishwasherAdapter = require('.././dishwasherAdapter');
+var dishwasherAdapter = require('../dishwasherAdapter');
 
 
 
