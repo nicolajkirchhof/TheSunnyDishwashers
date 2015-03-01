@@ -9,12 +9,13 @@
  */
 angular.module('monitorApp')
   .controller('MainCtrl', function ($scope, $http, $timeout) {
-
+        var statusURL = 'http://localhost:3000/status';
         var autoRefresh = false;
 
         var refresh = function(){
             $scope.powerState.label = 'Refreshing...';
-            $http.get('http://localhost:3000/status').
+            $scope.infoMsg = 'Refreshing';
+            $http.get(statusURL).
                 success(function (data) {
                     if (data) {
                         console.log(data);
@@ -31,6 +32,12 @@ angular.module('monitorApp')
 
                         $scope.dishWasherIsReady.label = (data.dishWasherIsReady ? 'Ready' : 'Not ready');
                         $scope.dishWasherIsReady.isActive = data.dishWasherIsReady;
+
+
+                        $scope.infoLabel = '';
+                        $scope.errorMsg = '';
+
+                        $scope.infoMsg = '';
 
                         if (autoRefresh) {
                             $timeout(refresh, 1000);
@@ -49,6 +56,9 @@ angular.module('monitorApp')
 
                     $scope.dishWasherIsReady.label = 'Error';
                     $scope.dishWasherIsReady.isActive = false;
+
+                    $scope.infoLabel = 'Error connecting to the Sunny Dishwasher. Make sure you have it running and the status reachable at ' + statusURL;
+                    $scope.errorMsg = 'Refreshing';
 
                     if (autoRefresh) {
                         $timeout(refresh, 1000);

@@ -1,3 +1,8 @@
+<div style="float:right;"><button ng-click="refresh();">Refresh</button></div>
+<span style="float:right;">{{infoLabel}}</span>
+<alert type="danger" ng-show="errorMsg" close="true">{{errorMsg}}</alert>
+<alert type="info" ng-show="errorMsg" close="true">{{infoMsg}}</alert>
+
 <div class="jumbotron" >
     <div class="dg">
        <!--<H1>The Sunny Dishwasher Monitor</H1>
@@ -26,11 +31,20 @@
         <img class="statusImage statusImagePowerActive" ng-hide="!powerState.isActive" src="images/power_state_active.png">
         <img class="statusImage statusImagePowerInActive" ng-hide="powerState.isActive" src="images/power_state_inactive.png">
 
-        <img class="statusImage" ng-hide="!isPresent.isActive" src="images/is_present_active.png">
-        <img class="statusImage" ng-hide="isPresent.isActive" src="images/is_present_inactive.png">
+        <img class="statusImage statusIsPresentActive" ng-hide="!isPresent.isActive" src="images/is_present_active.png">
+        <img class="statusImage statusIsPresentInActive" ng-hide="isPresent.isActive" src="images/is_present_inactive.png">
+
+        <img class="statusImage statusDishwasherReadyActive" ng-hide="!dishWasherIsReady.isActive" src="images/dishwasher_is_ready_active.png">
+        <img class="statusImage statusDishwasherIsReadyInActive" ng-hide="dishWasherIsReady.isActive" src="images/dishwasher_is_ready_inactive.png">
 
 
-        <button ng-click="refresh();">Refresh</button>
+        <img class="statusImage statusDishwasherIsRunningActive" ng-hide="!dishWasherIsRunning.isActive" src="images/dishwasher_is_running_active.png">
+        <img class="statusImage statusDishwasherIsRunningInActive" ng-hide="dishWasherIsRunning.isActive" src="images/dishwasher_is_running_inactive.png">
+
+
+
+
 
     </div>
 </div>
+
