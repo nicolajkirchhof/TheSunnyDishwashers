@@ -12,7 +12,15 @@ var relayrLightIntensityAdapter = (function () {
     // Listen and do stuff
     console.log('registering');
     relayr.app.on('data', function (topic, msg) {
-        //console.log(msg);
+
+        // diagnostic logging
+        var logData = {
+            source : 'RELAYR LIGHT SENSOR',
+            data : msg
+        };
+        console.log(logData);
+
+
         msg.readings.forEach(function (elem){
            if (elem.meaning == 'luminosity'){
                changeListener(Math.max(0, Math.min(100, Math.round(elem.value*100/1800))));
