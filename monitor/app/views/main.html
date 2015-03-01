@@ -1,50 +1,33 @@
+<!--
 <div style="float:right;"><button ng-click="refresh();">Refresh</button></div>
-<span style="float:right;">{{infoLabel}}</span>
-<alert type="danger" ng-show="errorMsg" close="true">{{errorMsg}}</alert>
-<alert type="info" ng-show="errorMsg" close="true">{{infoMsg}}</alert>
+    -->
+<alert type="danger" ng-show="errorMsg">{{errorMsg}}</alert>
+<alert type="info" ng-show="infoMsg">{{infoMsg}}</alert>
 
 <div class="jumbotron" >
     <div class="dg">
-       <!--<H1>The Sunny Dishwasher Monitor</H1>
-        <ng-dial-gauge id="gauge_light"
-                       scale-min="0"
-                       scale-max="100"
-                       border-width="1"
-                       ng-model="gauge_light"
-                       bar-color="pink"
-                       bar-width="6"
-                       units="%"
-                       angle="135"
-                       rotate="180"
-                       line-cap="round"
-                       style="stroke:blue;font-weight:100;">
-        </ng-dial-gauge>
-        <div>
-            <div class="statusLabel" ng-class="{active: powerState.isActive}">
 
-                <span>{{powerState.label}}</span>
-            </div>
-            Power state
+        <div class="imageContainer" >
+            <img class="statusImage statusImagePowerActive" ng-hide="!powerState.isActive" src="images/power_state_active.png">
+            <img class="statusImage statusImagePowerInActive" ng-hide="powerState.isActive" src="images/power_state_inactive.png">
+
+            <img class="statusImage statusIsPresentActive" ng-hide="!isPresent.isActive" src="images/is_present_active.png">
+            <img class="statusImage statusIsPresentInActive" ng-hide="isPresent.isActive" src="images/is_present_inactive.png">
+
+            <img class="statusImage statusDishwasherIsRunning" ng-hide="!dishwasherState.running" src="images/dishwasher_state_running.png">
+            <img class="statusImage statusDishwasherIsReady" ng-hide="!dishwasherState.ready" src="images/dishwasher_state_ready.png">
+            <img class="statusImage statusDishwasherIsOff" ng-hide="!dishwasherState.off" src="images/dishwasher_state_off.png">
         </div>
-        -->
-
-        <img class="statusImage statusImagePowerActive" ng-hide="!powerState.isActive" src="images/power_state_active.png">
-        <img class="statusImage statusImagePowerInActive" ng-hide="powerState.isActive" src="images/power_state_inactive.png">
-
-        <img class="statusImage statusIsPresentActive" ng-hide="!isPresent.isActive" src="images/is_present_active.png">
-        <img class="statusImage statusIsPresentInActive" ng-hide="isPresent.isActive" src="images/is_present_inactive.png">
-
-        <img class="statusImage statusDishwasherReadyActive" ng-hide="!dishWasherIsReady.isActive" src="images/dishwasher_is_ready_active.png">
-        <img class="statusImage statusDishwasherIsReadyInActive" ng-hide="dishWasherIsReady.isActive" src="images/dishwasher_is_ready_inactive.png">
-
-
-        <img class="statusImage statusDishwasherIsRunningActive" ng-hide="!dishWasherIsRunning.isActive" src="images/dishwasher_is_running_active.png">
-        <img class="statusImage statusDishwasherIsRunningInActive" ng-hide="dishWasherIsRunning.isActive" src="images/dishwasher_is_running_inactive.png">
-
-
-
-
 
     </div>
 </div>
+
+<!--
+PowerState: <input ng-model="powerState.isActive"/><br/>
+IsPresent:  <input ng-model="isPresent.isActive"/><br/>
+
+running:  <input ng-model="dishwasherState.running"/><br/>
+ready:  <input ng-model="dishwasherState.ready"/><br/>
+off:  <input ng-model="dishwasherState.off"/><br/>
+-->
 

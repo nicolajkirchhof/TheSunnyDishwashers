@@ -14,7 +14,8 @@ angular
     'ngCookies',
     'ngResource',
     'ngRoute',
-    'ngSanitize'
+    'ngSanitize',
+        'ui.bootstrap'
         //,'ngDialGauge'
   ])
   .config(function ($routeProvider) {

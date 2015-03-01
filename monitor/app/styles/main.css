@@ -79,9 +79,9 @@ body {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
         border-bottom: 0;
-      background-image: url('../images/cover_SunnyDishwasher.jpg');
+      /*background-image: url('../images/cover_SunnyDishwasher.jpg');*/
       background-color: transparent;
-      height: 600px;
+      height: 670px;
       background-size: contain;
       background-repeat: no-repeat;
   }
@@ -90,24 +90,45 @@ body {
     background-color: #aaaaaa;
   }
 
+  .imageContainer {
+      position: relative;
+  }
    .statusImage {
-       position: relative;
+       position: absolute;
    }
 
    .statusImagePowerActive {
-       top: -10px;
-       left:-400px;
+       top:  -50px;
+       left: -115px;
+       height: 250px;
    }
     .statusImagePowerInActive {
-        top: -25px;
-        left:-105px;
+        top:  -25px;
+        left: -105px;
+        height: 200px;
     }
 
     .statusIsPresentActive {
-        top: 150px;
-        left:150px;
+        top:  280px;
+        left: -212px;
     }
     .statusIsPresentInActive {
+        top:  250px;
+        left: -170px;
+    }
+
+
+    .statusDishwasherIsReady {
+        top:  220px;
+        left: 265px;
+    }
+
+    .statusDishwasherIsRunning {
+        top:  150px;
+        left: 210px;
+    }
+
+    .statusDishwasherIsOff {
         top: 150px;
         left:150px;
     }
