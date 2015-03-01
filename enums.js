@@ -13,6 +13,7 @@ exports.powerStateEnum = {
     WEAK : 1
 };
 
+// Describes the desired state of an appliance - which might be different from its current state
 exports.applianceDirectiveEnum = {
     // dunno. Used to detect uninitialized state
     UNDEFINED : 0,
@@ -21,5 +22,8 @@ exports.applianceDirectiveEnum = {
     WAIT : 1,
 
     // Start the thing, go go go!
-    RUN : 2
+    RUN : 2,
+
+    // Stop running
+    ABORT : 3
 };

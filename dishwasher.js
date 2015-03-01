@@ -13,6 +13,9 @@ var enums = require('./enums.js');
 
 var dishWasher = (function () {
 
+    // Time (ms) until a started washing program is aborted
+    var TIME_TO_ABORT = 10000;
+
     var applianceAdapter = null;
     var directive = enums.applianceDirectiveEnum.WAIT;
     var isRunning = false;
@@ -24,20 +27,45 @@ var dishWasher = (function () {
         // If the dishwasher has successfully been started, do not try to start it again
         if (isRunning) return;
 
-        console.log('DISHWASHER RUN!');
+        console.log('DISHWASHER RUN...');
 
         // For the moment, just fire the Run command once and don't check result...
-        // ...better would be: retry, notify user
+        // ...better would be: retry, notify user, try to find out what the heck happened
+        // by getting detailed status
         if(applianceAdapter) applianceAdapter.run(
             function() {
                 isRunning = true;
-                console.log('DISHWASHER RUN command SUCCEEDED')
+                console.log('DISHWASHER RUN SUCCEEDED')
+
+                // For the purpose of the Hackathon, abort the
+                // dishwasher program! The appliance is not connected
+                // to water, and goes into an error message when it's kept
+                // running (and won't like it much).
+                setTimeout(abort, TIME_TO_ABORT);
             },
             function() {
-                isRunning = false;
-                console.log('DISHWASHER RUN command FAILED')
+                console.log('DISHWASHER RUN FAILED')
             } );
     };
+
+    var abort = function() {
+        directive = enums.applianceDirectiveEnum.ABORT;
+
+        // If the dishwasher is not running, there is noting to abort
+        if (!isRunning) return;
+        console.log('DISHWASHER ABORT...');
+
+        // For the moment, just fire the Run command once. Since the Abort
+        // command takes some time to complete, the status should be monitored.
+        if(applianceAdapter) applianceAdapter.abort(
+            function() {
+                isRunning = false;
+                console.log('DISHWASHER ABORT SUCCEEDED')
+            },
+            function() {
+                console.log('DISHWASHER ABORT FAILED')
+            } );
+    }
 
     // Reset the state of this controller - internal function to make DI reliable
     var reset = function() {
