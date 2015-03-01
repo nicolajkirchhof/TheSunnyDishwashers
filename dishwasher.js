@@ -41,8 +41,8 @@ var dishWasher = (function () {
     var run = function() {
         directive = enums.applianceDirectiveEnum.RUN;
 
-        // If the dishwasher has successfully been started, do not try to start it again
-        if (isRunning) return;
+        // If the dishwasher has successfully been started, or is not ready, do not try to start it.
+        if (isRunning || !isReady) return;
 
         console.log('DISHWASHER RUN...');
         if (!applianceAdapter) return;
