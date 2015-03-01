@@ -7,8 +7,12 @@ var app=express();
 // --------------
 
 // Routing
-app.get('/',function(req,res){
-    res.send('SPA HTML goes here');
+app.get('/', function(req, res) {
+    res.send({
+        links : {
+            status: 'status'
+            }
+        });
 });
 
 app.get('/status', function(req, res) {
