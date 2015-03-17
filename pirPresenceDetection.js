@@ -33,8 +33,8 @@ var pirPresenceDetection = (function () {
 
     var SerialPort = require("serialport").SerialPort
 
-    var serialPort = new SerialPort("COM10", {
-        baudrate: 57600
+    var serialPort = new SerialPort("COM13", {
+        baudrate: 115200 //57600
     });
 
     var isActive = false;
